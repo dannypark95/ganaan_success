@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2')
+      format('woff2'),
+    url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff')
+      format('woff');
+}
+
 /* Global Styles */
 :root {
   --primary-color: #dc3545;
@@ -16,7 +29,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Godo', 'Nanum Gothic', 'Crimson Text', serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -26,6 +39,8 @@ body {
 a {
   color: var(--primary-color);
   text-decoration: none !important;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 a:hover {
@@ -348,18 +363,20 @@ table th {
 
 /* Navbar */
 .navbar {
+  font-family: 'Nanum Gothic', 'Montserrat', sans-serif;
   display: flex;
-  justify-content: space-between;
+  justify-content: normal !important;
   align-items: center;
   z-index: 1;
   width: 100%;
   opacity: 0.9;
-  background-color: #dc3545;
+  /* background-color: #dc3545; */
   max-height: 80px;
 }
 
 .navbar ul {
   display: flex;
+  margin-top: 1.2rem;
 }
 
 .navbar a {
@@ -376,8 +393,147 @@ table th {
   margin-right: 0.6rem;
 }
 
+.mainLogo {
+  max-height: 44px;
+}
+
+.navList {
+  margin-right: 20px;
+  margin-top: 1rem;
+}
+
+.navList ul li {
+  margin-bottom: 10px;
+}
+
+.navItemsMenu {
+  overflow: hidden;
+  position: inherit;
+  background-color: #000000;
+  opacity: 0.8;
+  color: #ccc;
+  text-align: center;
+  margin-top: 1.8rem;
+  border-radius: 2px;
+  -webkit-transition: max-height 0.4s ease-in-out 0.4s;
+  -moz-transition: max-height 0.4s ease-in-out 0.4s;
+  -o-transition: max-height 0.4s ease-in-out 0.4s;
+  -ms-transition: max-height 0.4s ease-in-out 0.4s;
+  transition: max-height 0.4s ease-in-out 0.4s;
+  max-height: 0;
+}
+
+.navItemsMenu div {
+  padding: 0.4rem 0;
+  font-size: 12px;
+}
+
+.navItems:hover .navItemsMenu {
+  max-height: 30em;
+}
+
+.navTitle {
+  color: rgb(37, 37, 37);
+  padding: 0 3vw;
+  font-size: 13px;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.navItemsMenu a:hover {
+  color: #48dc6a;
+}
+
+.navbar {
+  width: 1100px;
+  margin: 0 auto;
+  margin-right: 0px;
+}
+
+.footer-copyright {
+  background-color: rgb(33, 33, 33);
+  color: #828282;
+  font-size: 13px;
+}
+.contact-info {
+  background-color: #2d2d2d;
+  color: #797979;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 80px;
+}
+
+.dropdownList {
+  border-bottom: 1px solid rgb(49, 49, 49);
+}
+
+.dropdownBetween {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.dropdownLast {
+  margin-top: 4px;
+  border-bottom: 0px solid !important;
+}
+
+.navLogo ul {
+  padding: 0rem;
+}
+
+.logo {
+  height: 90px;
+  margin-top: -50px;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.navGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.nav-g1 {
+  grid-column: 1;
+  grid-row: 1;
+  width: 240px;
+}
+
+.nav-g2 {
+  grid-column: 2;
+  grid-row: 1;
+  width: 850px;
+}
+
+.navTitle:hover {
+  color: #dc3545;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.xmark {
+  width: 28px;
+  display: none;
+}
+
+.menuMobile {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .logo {
+    margin-left: 5vw;
+  }
+}
+
 /* Mobile Styles */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .hide-sm {
     display: none;
   }
@@ -411,23 +567,81 @@ table th {
     text-align: center;
     justify-content: center;
   }
-}
 
-.mainLogo {
-  max-height: 44px;
-}
+  .nav-g2 {
+    display: none !important;
+  }
 
-.navList {
-  margin-right: 20px;
-  margin-top: 1rem;
-}
+  .menuIcon {
+    display: block;
+    text-align: right;
+    margin-right: 2rem;
+  }
 
-.navList ul li {
-  margin-bottom: 10px;
-}
+  .navGrid {
+    padding: 0.5rem 1rem;
+  }
 
-.navList ul li a {
-  color: #333;
-  padding: 35px 22px;
-  font-size: 12px;
+  .nav-g1 {
+    margin-right: 4rem;
+  }
+
+  .menuMobile {
+    display: block;
+    background-color: #f5f5f5;
+  }
+
+  .navTitle {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    margin-top: 0px;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .contact-info {
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 13px;
+  }
+  .navItemsMenu {
+    margin-top: 0rem;
+    background-color: #e2e2e2;
+    font-size: 11px;
+  }
+
+  .navItemsMenu div {
+    padding: 0.5rem 15vw;
+  }
+
+  .navItemsMenu a {
+    color: rgb(33, 33, 33);
+  }
+
+  .dropdownList {
+    border-bottom: 1px solid rgb(201 201 201);
+  }
+
+  .dropdownBetween {
+    margin-top: 2px;
+    margin-bottom: 0px;
+  }
+
+  ul {
+    padding-left: 0rem !important;
+  }
+  .fa-bars:hover {
+    color: rgb(134 134 134);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navItemsMenu a:hover {
+    color: rgb(33, 33, 33);
+    font-weight: bolder;
+  }
+
+  .navTitle:hover {
+    color: rgb(33, 33, 33);
+    font-weight: bolder;
+  }
 }

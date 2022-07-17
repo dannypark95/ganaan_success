@@ -1,11 +1,12 @@
 import React from 'react';
 
 const Footer = () => {
+  const d = new Date();
+  let year = d.getFullYear();
+
   return (
-    <div>
-      <div className='footer-copyright text-center py-3'>
-        &copy; 2022 SUCCESS ACADEMY ALL RIGHT RESERVED
-      </div>
+    <div className='footer-copyright text-center py-3'>
+      Copyright &copy; {year} SUCCESS ACADEMY. All Right Reserved.
     </div>
   );
 };

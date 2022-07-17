@@ -1,9 +1,40 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/layout/Navbar';
+import Contact from './components/layout/Contact';
 import Footer from './components/layout/Footer';
 
 import Home from './components/pages/Home';
+
+import AboutIntro from './components/pages/about/AboutIntro';
+import AboutDocument from './components/pages/about/AboutDocument';
+import AboutHistory from './components/pages/about/AboutHistory';
+import AboutLocation from './components/pages/about/AboutLocation';
+
+import AbroadSchedule from './components/pages/abroad/AbroadSchedule';
+import AbroadProgram from './components/pages/abroad/AbroadProgram';
+import AbroadIntro from './components/pages/abroad/AbroadIntro';
+import AbroadProcedure from './components/pages/abroad/AbroadProcedure';
+
+import CommunityReview from './components/pages/community/CommunityReview';
+import CommunityEntry from './components/pages/community/CommunityEntry';
+import CommunityRefund from './components/pages/community/CommunityRefund';
+import CommunityForum from './components/pages/community/CommunityForum';
+import CommunityPolicy from './components/pages/community/CommunityPolicy';
+import CommunityItems from './components/pages/community/CommunityItems';
+
+import CurriculumSchedule from './components/pages/curriculum/CurriculumSchedule';
+import CurriculumProgram from './components/pages/curriculum/CurriculumProgram';
+import CurriculumMenu from './components/pages/curriculum/CurriculumMenu';
+import CurriculumLocation from './components/pages/curriculum/CurriculumLocation';
+import CurriculumGuide from './components/pages/curriculum/CurriculumGuide';
+import CurriculumApply from './components/pages/curriculum/CurriculumApply';
+
+import WalkinTour from './components/pages/walkin/WalkinTour';
+import WalkinPickDrop from './components/pages/walkin/WalkinPickDrop';
+import WalkinIntro from './components/pages/walkin/WalkinIntro';
+import WalkinApply from './components/pages/walkin/WalkinApply';
+import WalkinAfterschool from './components/pages/walkin/WalkinAfterschool';
 
 import './App.css';
 
@@ -13,14 +44,62 @@ function App() {
       <Navbar />
       <div className='all-center'>
         <Routes>
+          {/* Home Page */}
           <Route exact path='/' element={<Home />} />
-          {/* <Route exact path='/about' element={<About />} />
-              <Route exact path='/order' element={<Order />} />
-              <Route exact path='/checkout' element={<Checkout />} />
-              <Route exact path='/submit' element={<Submit />} />
-              <Route path='*' element={<NotFound />} /> */}
+
+          {/* About Page */}
+          <Route exact path='/about/intro' element={<AboutIntro />} />
+          <Route exact path='/about/history' element={<AboutHistory />} />
+          <Route exact path='/about/location' element={<AboutLocation />} />
+          <Route exact path='/about/document' element={<AboutDocument />} />
+
+          {/* Curriculum Page */}
+          <Route exact path='/curriculum/guide' element={<CurriculumGuide />} />
+          <Route exact path='/curriculum/apply' element={<CurriculumApply />} />
+          <Route
+            exact
+            path='/curriculum/program'
+            element={<CurriculumProgram />}
+          />
+          <Route
+            exact
+            path='/curriculum/location'
+            element={<CurriculumLocation />}
+          />
+          <Route
+            exact
+            path='/curriculum/schedule'
+            element={<CurriculumSchedule />}
+          />
+          <Route exact path='/curriculum/menu' element={<CurriculumMenu />} />
+
+          {/* Walk-in Page */}
+          <Route exact path='/walkin/apply' element={<WalkinApply />} />
+          <Route exact path='/walkin/intro' element={<WalkinIntro />} />
+          <Route exact path='/walkin/pickdrop' element={<WalkinPickDrop />} />
+          <Route exact path='/walkin/tour' element={<WalkinTour />} />
+          <Route
+            exact
+            path='/walkin/afterschool'
+            element={<WalkinAfterschool />}
+          />
+
+          {/* Abroad Page */}
+          <Route exact path='/abroad/intro' element={<AbroadIntro />} />
+          <Route exact path='/abroad/procedure' element={<AbroadProcedure />} />
+          <Route exact path='/abroad/program' element={<AbroadProgram />} />
+          <Route exact path='/abroad/schedule' element={<AbroadSchedule />} />
+
+          {/* Community Page */}
+          <Route exact path='/community/entry' element={<CommunityEntry />} />
+          <Route exact path='/community/forum' element={<CommunityForum />} />
+          <Route exact path='/community/items' element={<CommunityItems />} />
+          <Route exact path='/community/policy' element={<CommunityPolicy />} />
+          <Route exact path='/community/refund' element={<CommunityRefund />} />
+          <Route exact path='/community/review' element={<CommunityReview />} />
         </Routes>
       </div>
+      <Contact />
       <Footer />
     </Router>
   );
