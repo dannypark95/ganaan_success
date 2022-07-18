@@ -38,7 +38,7 @@ const MenuMobile = () => {
         </li>
         <li className='navItems'>
           {' '}
-          <div className='navTitle navLast'>공지사항</div>
+          <div className='navTitle navLast'>커뮤니티</div>
           <div className='navItemsMenu'>
             <Community />
           </div>

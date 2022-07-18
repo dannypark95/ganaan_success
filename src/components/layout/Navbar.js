@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import mainLogo from '../../media/logo.png';
@@ -13,7 +13,13 @@ import Community from './dropdown/Community';
 import Hamburger from './Hamburger';
 import MenuMobile from './MenuMobile';
 
+import NavbarContext from '../../context/navbar/navbarContext';
+
 const Navbar = () => {
+  const navbarContext = useContext(NavbarContext);
+
+  const { dropdownStatus } = navbarContext;
+
   return (
     <div>
       <div className='navGrid'>
@@ -71,7 +77,7 @@ const Navbar = () => {
             </li>
             <li className='navItems'>
               {' '}
-              <div className='navTitle'>공지사항</div>
+              <div className='navTitle'>커뮤니티</div>
               <div className='navItemsMenu'>
                 <Community />
               </div>
@@ -80,7 +86,7 @@ const Navbar = () => {
         </div>
         <Hamburger />
       </div>
-      <MenuMobile />
+      {dropdownStatus && <MenuMobile />}
     </div>
   );
 };

@@ -16,6 +16,7 @@ import AbroadProgram from './components/pages/abroad/AbroadProgram';
 import AbroadIntro from './components/pages/abroad/AbroadIntro';
 import AbroadProcedure from './components/pages/abroad/AbroadProcedure';
 
+import CommunityAnnouncement from './components/pages/community/CommunityAnnouncement';
 import CommunityReview from './components/pages/community/CommunityReview';
 import CommunityEntry from './components/pages/community/CommunityEntry';
 import CommunityRefund from './components/pages/community/CommunityRefund';
@@ -36,72 +37,105 @@ import WalkinIntro from './components/pages/walkin/WalkinIntro';
 import WalkinApply from './components/pages/walkin/WalkinApply';
 import WalkinAfterschool from './components/pages/walkin/WalkinAfterschool';
 
+import NavbarState from './context/navbar/navbarState';
+
 import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <div className='all-center'>
-        <Routes>
-          {/* Home Page */}
-          <Route exact path='/' element={<Home />} />
+    <NavbarState>
+      <Router>
+        <Navbar />
+        <div className='all-center'>
+          <Routes>
+            {/* Home Page */}
+            <Route exact path='/' element={<Home />} />
 
-          {/* About Page */}
-          <Route exact path='/about/intro' element={<AboutIntro />} />
-          <Route exact path='/about/history' element={<AboutHistory />} />
-          <Route exact path='/about/location' element={<AboutLocation />} />
-          <Route exact path='/about/document' element={<AboutDocument />} />
+            {/* About Page */}
+            <Route exact path='/about/intro' element={<AboutIntro />} />
+            <Route exact path='/about/history' element={<AboutHistory />} />
+            <Route exact path='/about/location' element={<AboutLocation />} />
+            <Route exact path='/about/document' element={<AboutDocument />} />
 
-          {/* Curriculum Page */}
-          <Route exact path='/curriculum/guide' element={<CurriculumGuide />} />
-          <Route exact path='/curriculum/apply' element={<CurriculumApply />} />
-          <Route
-            exact
-            path='/curriculum/program'
-            element={<CurriculumProgram />}
-          />
-          <Route
-            exact
-            path='/curriculum/location'
-            element={<CurriculumLocation />}
-          />
-          <Route
-            exact
-            path='/curriculum/schedule'
-            element={<CurriculumSchedule />}
-          />
-          <Route exact path='/curriculum/menu' element={<CurriculumMenu />} />
+            {/* Curriculum Page */}
+            <Route
+              exact
+              path='/curriculum/guide'
+              element={<CurriculumGuide />}
+            />
+            <Route
+              exact
+              path='/curriculum/apply'
+              element={<CurriculumApply />}
+            />
+            <Route
+              exact
+              path='/curriculum/program'
+              element={<CurriculumProgram />}
+            />
+            <Route
+              exact
+              path='/curriculum/location'
+              element={<CurriculumLocation />}
+            />
+            <Route
+              exact
+              path='/curriculum/schedule'
+              element={<CurriculumSchedule />}
+            />
+            <Route exact path='/curriculum/menu' element={<CurriculumMenu />} />
 
-          {/* Walk-in Page */}
-          <Route exact path='/walkin/apply' element={<WalkinApply />} />
-          <Route exact path='/walkin/intro' element={<WalkinIntro />} />
-          <Route exact path='/walkin/pickdrop' element={<WalkinPickDrop />} />
-          <Route exact path='/walkin/tour' element={<WalkinTour />} />
-          <Route
-            exact
-            path='/walkin/afterschool'
-            element={<WalkinAfterschool />}
-          />
+            {/* Walk-in Page */}
+            <Route exact path='/walkin/apply' element={<WalkinApply />} />
+            <Route exact path='/walkin/intro' element={<WalkinIntro />} />
+            <Route exact path='/walkin/pickdrop' element={<WalkinPickDrop />} />
+            <Route exact path='/walkin/tour' element={<WalkinTour />} />
+            <Route
+              exact
+              path='/walkin/afterschool'
+              element={<WalkinAfterschool />}
+            />
 
-          {/* Abroad Page */}
-          <Route exact path='/abroad/intro' element={<AbroadIntro />} />
-          <Route exact path='/abroad/procedure' element={<AbroadProcedure />} />
-          <Route exact path='/abroad/program' element={<AbroadProgram />} />
-          <Route exact path='/abroad/schedule' element={<AbroadSchedule />} />
+            {/* Abroad Page */}
+            <Route exact path='/abroad/intro' element={<AbroadIntro />} />
+            <Route
+              exact
+              path='/abroad/procedure'
+              element={<AbroadProcedure />}
+            />
+            <Route exact path='/abroad/program' element={<AbroadProgram />} />
+            <Route exact path='/abroad/schedule' element={<AbroadSchedule />} />
 
-          {/* Community Page */}
-          <Route exact path='/community/entry' element={<CommunityEntry />} />
-          <Route exact path='/community/forum' element={<CommunityForum />} />
-          <Route exact path='/community/items' element={<CommunityItems />} />
-          <Route exact path='/community/policy' element={<CommunityPolicy />} />
-          <Route exact path='/community/refund' element={<CommunityRefund />} />
-          <Route exact path='/community/review' element={<CommunityReview />} />
-        </Routes>
-      </div>
-      <Contact />
-      <Footer />
-    </Router>
+            {/* Community Page */}
+            <Route
+              exact
+              path='/community/announcement'
+              element={<CommunityAnnouncement />}
+            />
+            <Route exact path='/community/entry' element={<CommunityEntry />} />
+            <Route exact path='/community/forum' element={<CommunityForum />} />
+            <Route exact path='/community/items' element={<CommunityItems />} />
+            <Route
+              exact
+              path='/community/policy'
+              element={<CommunityPolicy />}
+            />
+            <Route
+              exact
+              path='/community/refund'
+              element={<CommunityRefund />}
+            />
+            <Route
+              exact
+              path='/community/review'
+              element={<CommunityReview />}
+            />
+          </Routes>
+        </div>
+        <Contact />
+        <Footer />
+      </Router>
+    </NavbarState>
   );
 }
 

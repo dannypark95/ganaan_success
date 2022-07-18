@@ -5,6 +5,9 @@ const Community = () => {
   return (
     <div>
       <div className='dropdownList dropdownFirst'>
+        <Link to='/community/anouncement'>공지사항</Link>
+      </div>
+      <div className='dropdownList dropdownBetween'>
         <Link to='/community/items'>연수준비물</Link>
       </div>
       <div className='dropdownList dropdownBetween'>
