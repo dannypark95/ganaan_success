@@ -628,6 +628,8 @@ h4 {
   }
   .mainLogo {
     margin-top: -3px;
+    width: 120px;
+    height: inherit;
   }
   .hedaerText {
     margin-left: 4rem;
@@ -673,7 +675,7 @@ h4 {
   .menuIcon {
     display: block;
     text-align: right;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 
   .menuMobile {
@@ -747,7 +749,7 @@ h4 {
 
   .nav-g1 {
     margin-left: 0rem;
-    height: 4rem;
+    height: 3.5rem;
   }
 
   .menuMobile {
@@ -762,6 +764,6 @@ h4 {
   }
 
   .fa_custom {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
