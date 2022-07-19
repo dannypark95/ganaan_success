@@ -453,7 +453,7 @@ table th {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #0f3396;
+  background-color: #003465;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -464,7 +464,7 @@ table th {
 }
 
 .navItemsMenu a:hover {
-  color: #ffc4c4;
+  color: #ffcb05;
 }
 
 .navbar {
@@ -496,7 +496,6 @@ table th {
 }
 
 .dropdownLast {
-  margin-top: 4px;
   border-bottom: 0px solid !important;
 }
 
@@ -535,7 +534,7 @@ table th {
 
 .pageGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
 }
@@ -543,15 +542,17 @@ table th {
 .page-g1 {
   grid-column: 1;
   grid-row: 1;
+  padding: 1rem 1rem;
 }
 
 .page-g2 {
   grid-column: 2;
   grid-row: 1;
+  padding: 1rem 1rem;
 }
 
 .navTitle:hover {
-  color: #0f3396;
+  color: #003465;
   -webkit-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
 }
