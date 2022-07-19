@@ -50,34 +50,44 @@ const Navbar = () => {
         <div className='navList navbar nav-g2'>
           <ul>
             <li className='navItems'>
-              <div className='navTitle'>학원소개</div>
+              <div className='navTitle'>
+                <div className='navName'>학원소개</div>
+              </div>
               <div className='navItemsMenu'>
                 <About />
               </div>
             </li>
             <li className='navItems'>
-              <div className='navTitle'>영어캠프</div>
+              <div className='navTitle'>
+                <div className='navName'>영어캠프</div>
+              </div>
               <div className='navItemsMenu'>
                 <Curriculum />
               </div>
             </li>
             <li className='navItems'>
               {' '}
-              <div className='navTitle'>WALK-IN</div>
+              <div className='navTitle'>
+                <div className='navName'>WALK-IN</div>
+              </div>
               <div className='navItemsMenu'>
                 <Walkin />
               </div>
             </li>
             <li className='navItems'>
               {' '}
-              <div className='navTitle'>관리형 조기유학</div>
+              <div className='navTitle'>
+                <div className='navName'>관리형 조기유학</div>
+              </div>
               <div className='navItemsMenu'>
                 <Abroad />
               </div>
             </li>
             <li className='navItems'>
               {' '}
-              <div className='navTitle'>커뮤니티</div>
+              <div className='navTitle'>
+                <div className='navName'>커뮤니티</div>
+              </div>
               <div className='navItemsMenu'>
                 <Community />
               </div>

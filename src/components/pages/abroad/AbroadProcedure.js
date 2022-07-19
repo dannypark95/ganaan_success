@@ -1,7 +1,33 @@
 import React from 'react';
 
+import Header from '../../layout/Header';
+import Abroad from '../../layout/dropdown/Abroad';
+
 const AbroadProcedure = () => {
-  return <div>접수방법</div>;
+  return (
+    <div>
+      <Header text={'관리형 조기유학'} />
+
+      <div className='container'>
+        <h4>접수방법</h4>
+
+        <div className='pageGrid'>
+          <div className='page-g1'>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis similique consequatur nostrum soluta amet quas alias
+            quod saepe animi dolor odit magni quia consequuntur, a aspernatur
+            cum quisquam vel, tenetur tempore necessitatibus quidem accusamus
+            at. Itaque aspernatur quod ratione non consequuntur numquam
+            doloribus? Accusantium assumenda recusandae possimus repellendus,
+            autem dicta!
+          </div>
+          <div className='page-g2'>
+            <Abroad current={'procedure'} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default AbroadProcedure;

@@ -14,10 +14,13 @@ const Hamburger = () => {
   return (
     <div className='menuIcon'>
       {!dropdownStatus && (
-        <i class='fa fa-bars fa_custom fa-2x' onClick={onClick}></i>
+        <i className='fa fa-bars fa_custom fa-2x' onClick={onClick}></i>
       )}
       {dropdownStatus && (
-        <i class='fa fa-bars fa_custom fa-2x dropdownX' onClick={onClick}></i>
+        <i
+          className='fa fa-bars fa_custom fa-2x dropdownX'
+          onClick={onClick}
+        ></i>
       )}
     </div>
   );
