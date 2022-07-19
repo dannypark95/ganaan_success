@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
-import mainLogo from '../../media/logo.png';
-import mainSeal from '../../media/seal.png';
+import mainLogo from '../../media/mainLogo.png';
 
 import About from './dropdown/About';
 import Abroad from './dropdown/Abroad';
@@ -28,13 +27,6 @@ const Navbar = () => {
             <Link to='/'>
               <div className='navLogo'>
                 <ul>
-                  <li>
-                    <img
-                      src={mainSeal}
-                      alt='navSeal'
-                      className='mainLogo'
-                    ></img>
-                  </li>
                   <li>
                     <img
                       src={mainLogo}

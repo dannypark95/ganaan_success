@@ -395,8 +395,7 @@ table th {
 }
 
 .mainLogo {
-  max-height: 44px;
-  height: intrinsic;
+  max-height: 40px;
 }
 
 .navList {
@@ -609,7 +608,6 @@ h4 {
 @media (max-width: 1100px) {
   .logo {
     margin-left: 4vw;
-    width: 150px;
   }
   .nav-g1 {
     margin-left: 4rem;
@@ -618,11 +616,18 @@ h4 {
   .headerText {
     margin-left: 6rem;
   }
+
+  .mainLogo {
+    max-height: 40px;
+  }
 }
 /* Mobile Styles */
 @media (max-width: 900px) {
   .navLogo {
     margin-top: -4px;
+  }
+  .mainLogo {
+    margin-top: -3px;
   }
   .hedaerText {
     margin-left: 4rem;
