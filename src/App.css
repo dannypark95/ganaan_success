@@ -559,11 +559,6 @@ table th {
   transition: 0.15s ease-in-out;
 }
 
-.xmark {
-  width: 28px;
-  display: none;
-}
-
 .menuMobile {
   display: none;
 }
@@ -680,16 +675,15 @@ h4 {
 
   .menuMobile {
     display: block;
-    background-color: #f5f5f5;
   }
 
   .navTitle {
-    padding: 1rem;
+    padding: 0.75rem;
     text-align: center;
     border-bottom: 1px solid rgb(214, 214, 214);
     margin-top: 0px;
-    font-weight: normal;
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 11px;
   }
   .contact-info {
     padding: 2rem 2rem;
@@ -702,7 +696,8 @@ h4 {
   }
 
   .navItemsMenu div {
-    padding: 0.5rem 15vw;
+    padding: 0.3rem 7vw;
+    font-size: 9px;
   }
 
   .navItemsMenu a {
@@ -754,16 +749,44 @@ h4 {
 
   .menuMobile {
     overflow: hidden;
-    position: inherit;
+    position: absolute;
     -webkit-transition: max-height 0.4s ease-in-out 0.4s;
     -moz-transition: max-he ight 0.4s ease-in-out 0.4s;
     -o-transition: max-height 0.4s ease-in-out 0.4s;
     -ms-transition: max-height 0.4s ease-in-out 0.4s;
     transition: max-height 0.4s ease-in-out 0.4s;
     max-height: 30em;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    margin-top: -56px;
   }
 
   .fa_custom {
     font-size: 25px;
+  }
+
+  .innerMenu {
+    width: 75vw;
+    background-color: #f5f5f5;
+    float: right;
+    height: 100vh;
+  }
+  .xmarkNav {
+    width: 20px;
+    height: 56px;
+    margin-right: 2rem;
+  }
+
+  .copyright {
+    font-size: 8px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.75rem;
+    margin-left: 14vw;
+  }
+  .xmark_align {
+    text-align: right;
   }
 }

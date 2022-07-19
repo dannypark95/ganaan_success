@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
+import NavbarContext from '../../../context/navbar/navbarContext';
+
 const Curriculum = (props) => {
+  const navbarContext = useContext(NavbarContext);
+
+  const { setDropdown } = navbarContext;
+
+  const onClick = (e) => {
+    setDropdown(false);
+  };
+
   let navSide = '';
   let guide = '';
   let apply = '';
@@ -30,32 +40,32 @@ const Curriculum = (props) => {
 
   return (
     <div>
-      <Link to='/curriculum/guide'>
+      <Link to='/curriculum/guide' onClick={onClick}>
         <div className={`dropdownList dropdownFirst ${navSide} ${guide}`}>
           모집요강
         </div>
       </Link>
-      <Link to='/curriculum/apply'>
+      <Link to='/curriculum/apply' onClick={onClick}>
         <div className={`dropdownList dropdownBetween ${navSide} ${apply}`}>
           접수신청
         </div>
       </Link>
-      <Link to='/curriculum/program'>
+      <Link to='/curriculum/program' onClick={onClick}>
         <div className={`dropdownList dropdownBetween ${navSide} ${program}`}>
           교육프로그램
         </div>
       </Link>
-      <Link to='/curriculum/schedule'>
+      <Link to='/curriculum/schedule' onClick={onClick}>
         <div className={`dropdownList dropdownBetween ${navSide} ${schedule}`}>
           주간 일과표
         </div>
       </Link>
-      <Link to='/curriculum/location'>
+      <Link to='/curriculum/location' onClick={onClick}>
         <div className={`dropdownList dropdownBetween ${navSide} ${location}`}>
           캠프장소소개
         </div>
       </Link>
-      <Link to='/curriculum/menu'>
+      <Link to='/curriculum/menu' onClick={onClick}>
         <div className={`dropdownList dropdownLast ${navSide} ${menu}`}>
           식단표
         </div>
