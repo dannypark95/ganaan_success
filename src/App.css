@@ -396,6 +396,7 @@ table th {
 
 .mainLogo {
   max-height: 44px;
+  height: intrinsic;
 }
 
 .navList {
@@ -607,7 +608,8 @@ h4 {
 
 @media (max-width: 1100px) {
   .logo {
-    margin-left: 5vw;
+    margin-left: 4vw;
+    width: 150px;
   }
   .nav-g1 {
     margin-left: 4rem;
@@ -619,6 +621,9 @@ h4 {
 }
 /* Mobile Styles */
 @media (max-width: 900px) {
+  .navLogo {
+    margin-top: -4px;
+  }
   .hedaerText {
     margin-left: 4rem;
   }
@@ -664,10 +669,6 @@ h4 {
     display: block;
     text-align: right;
     margin-right: 2rem;
-  }
-
-  .navGrid {
-    padding: 0.5rem 1rem;
   }
 
   .menuMobile {
@@ -741,6 +742,7 @@ h4 {
 
   .nav-g1 {
     margin-left: 0rem;
+    height: 4rem;
   }
 
   .menuMobile {
@@ -752,5 +754,9 @@ h4 {
     -ms-transition: max-height 0.4s ease-in-out 0.4s;
     transition: max-height 0.4s ease-in-out 0.4s;
     max-height: 30em;
+  }
+
+  .fa_custom {
+    font-size: 30px;
   }
 }
