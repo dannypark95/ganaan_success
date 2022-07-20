@@ -625,7 +625,7 @@ h4 {
   background-color: #1b213c;
 }
 
-. @media (max-width: 1100px) {
+@media (max-width: 1100px) {
   .logo {
     margin-left: 4vw;
   }
@@ -650,6 +650,7 @@ h4 {
     margin-top: -3px;
     width: 120px;
     height: inherit;
+    margin-left: 1rem;
   }
   .hedaerText {
     margin-left: 4rem;
@@ -707,8 +708,8 @@ h4 {
     text-align: center;
     border-bottom: 1px solid rgb(214, 214, 214);
     margin-top: 0px;
-    font-weight: bold;
-    font-size: 11px;
+    font-weight: normal;
+    font-size: 15px;
   }
   .contact-info {
     padding: 2rem 2rem;
@@ -722,7 +723,7 @@ h4 {
 
   .navItemsMenu div {
     padding: 0.3rem 7vw;
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .navItemsMenu a {
@@ -773,14 +774,12 @@ h4 {
   }
 
   .menuMobile {
-    overflow: hidden;
-    position: absolute;
+    position: fixed;
     -webkit-transition: max-height 0.4s ease-in-out 0.4s;
     -moz-transition: max-he ight 0.4s ease-in-out 0.4s;
     -o-transition: max-height 0.4s ease-in-out 0.4s;
     -ms-transition: max-height 0.4s ease-in-out 0.4s;
     transition: max-height 0.4s ease-in-out 0.4s;
-    max-height: 30em;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100vw;
     height: 100vh;
