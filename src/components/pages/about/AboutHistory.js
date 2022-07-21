@@ -14,6 +14,9 @@ const AboutHistory = () => {
 
         <div className='pageGrid'>
           <div className='page-g1'>
+            <About current={'history'} />
+          </div>
+          <div className='page-g2'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo illum
             quibusdam quo pariatur ad earum deserunt, sit sunt. Autem in, quasi,
             accusantium dignissimos ipsum voluptatum earum enim fugit ratione
@@ -26,9 +29,6 @@ const AboutHistory = () => {
             modi similique ipsa incidunt inventore sequi hic! Voluptas deleniti
             obcaecati aperiam maxime error dignissimos voluptate exercitationem
             quod nihil iure!
-          </div>
-          <div className='page-g2'>
-            <About current={'history'} />
           </div>
         </div>
       </div>

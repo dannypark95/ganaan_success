@@ -13,6 +13,9 @@ const WalkinTour = () => {
 
         <div className='pageGrid'>
           <div className='page-g1'>
+            <Walkin current={'tour'} />
+          </div>
+          <div className='page-g2'>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur
@@ -20,9 +23,6 @@ const WalkinTour = () => {
             at. Itaque aspernatur quod ratione non consequuntur numquam
             doloribus? Accusantium assumenda recusandae possimus repellendus,
             autem dicta!
-          </div>
-          <div className='page-g2'>
-            <Walkin current={'tour'} />
           </div>
         </div>
       </div>

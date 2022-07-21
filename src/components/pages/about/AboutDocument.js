@@ -13,12 +13,12 @@ const AboutDocument = () => {
 
         <div className='pageGrid'>
           <div className='page-g1'>
+            <About current={'document'} />
+          </div>
+          <div className='page-g2'>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
             facere molestiae quae aut. Eum nostrum non aperiam, quibusdam fugit
             quae?
-          </div>
-          <div className='page-g2'>
-            <About current={'document'} />
           </div>
         </div>
       </div>
