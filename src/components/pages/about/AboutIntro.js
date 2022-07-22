@@ -6,7 +6,7 @@ import About from '../../layout/dropdown/About';
 const AboutIntro = () => {
   return (
     <div>
-      <Header text={'학원소개'} />
+      <Header text={'학원소개'} sub={'인사말'} />
 
       <div className='container'>
         <h4>인사말</h4>

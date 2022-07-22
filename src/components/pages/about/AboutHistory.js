@@ -7,7 +7,7 @@ import About from '../../layout/dropdown/About';
 const AboutHistory = () => {
   return (
     <div>
-      <Header text={'학원소개'} />
+      <Header text={'학원소개'} sub={'연혁'} />
 
       <div className='container'>
         <h4>연혁</h4>

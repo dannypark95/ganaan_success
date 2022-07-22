@@ -6,7 +6,7 @@ import Abroad from '../../layout/dropdown/Abroad';
 const AbroadProcedure = () => {
   return (
     <div>
-      <Header text={'관리형 조기유학'} />
+      <Header text={'관리형 조기유학'} sub={'접수방법'} />
 
       <div className='container'>
         <h4>접수방법</h4>

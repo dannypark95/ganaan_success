@@ -6,7 +6,7 @@ import Abroad from '../../layout/dropdown/Abroad';
 const AbroadIntro = () => {
   return (
     <div>
-      <Header text={'관리형 조기유학'} />
+      <Header text={'관리형 조기유학'} sub={'학교소개'} />
 
       <div className='container'>
         <h4>학교소개</h4>

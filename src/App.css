@@ -435,7 +435,7 @@ table th {
 
 .navTitle {
   color: rgb(37, 37, 37);
-  padding: 0 3vw;
+  padding: 0 1vw;
   font-size: 13px;
   margin-top: 5px;
 }
@@ -557,7 +557,7 @@ table th {
 
 .pageGrid {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
   align-items: center;
 }
@@ -584,15 +584,11 @@ table th {
   display: none;
 }
 
-.headerPic {
-  height: 100px;
+.headerBanner {
+  height: 300px;
   overflow: hidden;
-}
-
-.headerPic img {
   position: relative;
-  top: 100%;
-  transform: translateY(-70%);
+  text-align: center;
 }
 
 .headerSection {
@@ -600,16 +596,25 @@ table th {
   height: 70px;
 }
 
+.headerPic {
+  -webkit-filter: brightness(60%);
+  filter: brightness(60%);
+}
+
 .headerText {
-  background-color: #ffffff;
-  width: 150px;
-  height: 70px;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 8rem;
-  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+.subHeader {
+  font-size: 15px;
+}
+
+.centered {
 }
 
 h4 {
@@ -625,16 +630,22 @@ h4 {
   background-color: #1b213c;
 }
 
+.navItems {
+  z-index: 10;
+}
+
+@media (max-width: 1710px) {
+  .navTitle {
+    padding: 0 3vw;
+  }
+}
+
 @media (max-width: 1100px) {
   .logo {
     margin-left: 4vw;
   }
   .nav-g1 {
     margin-left: 4rem;
-  }
-
-  .headerText {
-    margin-left: 6rem;
   }
 
   .mainLogo {
@@ -648,7 +659,7 @@ h4 {
   }
   .mainLogo {
     margin-top: -3px;
-    width: 120px;
+    width: 150px;
     height: inherit;
     margin-left: 1rem;
   }
