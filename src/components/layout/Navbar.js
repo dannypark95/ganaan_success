@@ -26,15 +26,15 @@ const Navbar = () => {
           <div className='logo'>
             <Link to='/'>
               <div className='navLogo'>
-                <ul>
-                  <li>
-                    <img
-                      src={mainLogo}
-                      alt='navLogo_main'
-                      className='mainLogo'
-                    ></img>
-                  </li>
-                </ul>
+                {/* <ul>
+                  <li> */}
+                <img
+                  src={mainLogo}
+                  alt='navLogo_main'
+                  className='mainLogo'
+                ></img>
+                {/* </li>
+                </ul> */}
               </div>
             </Link>
           </div>
