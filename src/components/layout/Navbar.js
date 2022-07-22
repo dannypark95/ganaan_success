@@ -30,7 +30,7 @@ const Navbar = () => {
                   <li>
                     <img
                       src={mainLogo}
-                      alt='navLogo'
+                      alt='navLogo_main'
                       className='mainLogo'
                     ></img>
                   </li>

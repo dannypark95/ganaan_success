@@ -616,9 +616,6 @@ table th {
   font-size: 15px;
 }
 
-.centered {
-}
-
 h4 {
   text-align: left;
   margin-bottom: 2rem !important;
@@ -648,10 +645,6 @@ h4 {
   }
   .nav-g1 {
     margin-left: ;
-  }
-
-  .mainLogo {
-    max-height: 40px;
   }
 }
 /* Mobile Styles */
