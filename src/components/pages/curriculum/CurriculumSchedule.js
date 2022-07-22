@@ -6,7 +6,7 @@ import Curriculum from '../../layout/dropdown/Curriculum';
 const CurriculumSchedule = () => {
   return (
     <div>
-      <Header text={'영어캠프'} />
+      <Header text={'영어캠프'} sub={'주간 일간표'} />
 
       <div className='container'>
         <h4>주간 일간표</h4>

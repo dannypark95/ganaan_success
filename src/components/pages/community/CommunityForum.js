@@ -6,7 +6,7 @@ import Community from '../../layout/dropdown/Community';
 const CommunityForum = () => {
   return (
     <div>
-      <Header text={'커뮤니티'} />
+      <Header text={'커뮤니티'} sub={'상담게시판'} />
 
       <div className='container'>
         <h4>상담게시판</h4>

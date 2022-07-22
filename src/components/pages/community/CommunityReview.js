@@ -6,7 +6,7 @@ import Community from '../../layout/dropdown/Community';
 const CommunityReview = () => {
   return (
     <div>
-      <Header text={'커뮤니티'} />
+      <Header text={'커뮤니티'} sub={'연수후기'} />
 
       <div className='container'>
         <h4>연수후기</h4>

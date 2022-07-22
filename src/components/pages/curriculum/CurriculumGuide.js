@@ -6,7 +6,7 @@ import Curriculum from '../../layout/dropdown/Curriculum';
 const CurriculumGuide = () => {
   return (
     <div>
-      <Header text={'영어캠프'} />
+      <Header text={'영어캠프'} sub={'모집요강'} />
 
       <div className='container'>
         <h4>모집요강</h4>

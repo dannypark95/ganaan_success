@@ -396,6 +396,7 @@ table th {
 
 .mainLogo {
   max-height: 40px;
+  height: inherit;
 }
 
 .navList {
@@ -645,7 +646,7 @@ h4 {
     margin-left: 4vw;
   }
   .nav-g1 {
-    margin-left: 4rem;
+    margin-left: ;
   }
 
   .mainLogo {
@@ -660,7 +661,6 @@ h4 {
   .mainLogo {
     margin-top: -3px;
     width: 150px;
-    height: inherit;
     margin-left: 1rem;
   }
   .hedaerText {

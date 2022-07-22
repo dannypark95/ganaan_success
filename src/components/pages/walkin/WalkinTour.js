@@ -6,7 +6,7 @@ import Walkin from '../../layout/dropdown/Walkin';
 const WalkinTour = () => {
   return (
     <div>
-      <Header text={'영어캠프'} />
+      <Header text={'영어캠프'} sub={'투어신청'} />
 
       <div className='container'>
         <h4>투어신청</h4>

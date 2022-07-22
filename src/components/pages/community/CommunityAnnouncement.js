@@ -6,7 +6,7 @@ import Community from '../../layout/dropdown/Community';
 const CommunityAnnouncement = () => {
   return (
     <div>
-      <Header text={'커뮤니티'} />
+      <Header text={'커뮤니티'} sub={'공지사항'} />
 
       <div className='container'>
         <h4>공지사항</h4>

@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <div className='footer-copyright text-center py-3'>
-      Copyright &copy; {year} SUCCESS ACADEMY. All Right Reserved.
+      &copy; {year} SUCCESS ACADEMY. All Right Reserved.
     </div>
   );
 };

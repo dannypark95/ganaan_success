@@ -6,7 +6,7 @@ import Community from '../../layout/dropdown/Community';
 const CommunityPolicy = () => {
   return (
     <div>
-      <Header text={'커뮤니티'} />
+      <Header text={'커뮤니티'} sub={'어학원규정'} />
 
       <div className='container'>
         <h4>어학원규정</h4>
