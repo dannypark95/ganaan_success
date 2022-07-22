@@ -397,6 +397,7 @@ table th {
 .mainLogo {
   max-height: 40px;
   height: inherit;
+  display: flex;
 }
 
 .navList {
