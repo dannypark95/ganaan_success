@@ -9,13 +9,15 @@ const CommunityPolicy = () => {
       <Header text={'커뮤니티'} sub={'어학원규정'} />
 
       <div className='container'>
-        <h4>어학원규정</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>커뮤니티</div>
             <Community current={'policy'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>어학원규정</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

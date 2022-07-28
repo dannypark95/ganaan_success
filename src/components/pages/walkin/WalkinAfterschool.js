@@ -6,16 +6,18 @@ import Walkin from '../../layout/dropdown/Walkin';
 const WalkinAfterschool = () => {
   return (
     <div>
-      <Header text={'영어캠프'} sub={'방과후 수업'} />
+      <Header text={'WALK-IN'} sub={'방과후 수업'} />
 
       <div className='container'>
-        <h4>방과후 수업</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>WALK-IN</div>
             <Walkin current={'afterschool'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>방과후 수업</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

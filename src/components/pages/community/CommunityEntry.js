@@ -9,13 +9,15 @@ const CommunityEntry = () => {
       <Header text={'커뮤니티'} sub={'출입국 정보'} />
 
       <div className='container'>
-        <h4>출입국 정보</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>커뮤니티</div>
             <Community current={'entry'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>출입국 정보</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

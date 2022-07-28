@@ -9,13 +9,15 @@ const WalkinTour = () => {
       <Header text={'영어캠프'} sub={'투어신청'} />
 
       <div className='container'>
-        <h4>투어신청</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>WALK-IN</div>
             <Walkin current={'tour'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>투어신청</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

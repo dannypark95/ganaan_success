@@ -9,13 +9,15 @@ const CurriculumGuide = () => {
       <Header text={'영어캠프'} sub={'모집요강'} />
 
       <div className='container'>
-        <h4>모집요강</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>영어캠프</div>
             <Curriculum current={'guide'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>모집요강</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

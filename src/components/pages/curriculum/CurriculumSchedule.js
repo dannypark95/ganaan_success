@@ -9,13 +9,15 @@ const CurriculumSchedule = () => {
       <Header text={'영어캠프'} sub={'주간 일간표'} />
 
       <div className='container'>
-        <h4>주간 일간표</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>영어캠프</div>
             <Curriculum current={'schedule'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>주간 일간표</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

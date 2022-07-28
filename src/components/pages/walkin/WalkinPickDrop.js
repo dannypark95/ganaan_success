@@ -9,13 +9,15 @@ const WalkinPickDrop = () => {
       <Header text={'영어캠프'} sub={'픽-드랍 서비스'} />
 
       <div className='container'>
-        <h4>픽-드랍 서비스</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>WALK-IN</div>
             <Walkin current={'pickdrop'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>픽-드랍 서비스</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

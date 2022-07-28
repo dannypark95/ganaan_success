@@ -10,13 +10,15 @@ const AboutHistory = () => {
       <Header text={'학원소개'} sub={'연혁'} />
 
       <div className='container'>
-        <h4>연혁</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>학원소개</div>
             <About current={'history'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>연혁</span>
+            </div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo illum
             quibusdam quo pariatur ad earum deserunt, sit sunt. Autem in, quasi,
             accusantium dignissimos ipsum voluptatum earum enim fugit ratione

@@ -9,13 +9,15 @@ const CurriculumMenu = () => {
       <Header text={'영어캠프'} sub={'식단표'} />
 
       <div className='container'>
-        <h4>식단표</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>영어캠프</div>
             <Curriculum current={'menu'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>식단표</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

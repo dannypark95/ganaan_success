@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = (props) => {
   return (
@@ -13,7 +14,10 @@ const Header = (props) => {
         <div className='headerText'>
           {props.text}
           <div className='subHeader'>
-            Home <i className='fa fa-angle-right' /> {props.text}{' '}
+            <Link to='/'>
+              <i className='fa fa-home homeImg' />
+            </Link>{' '}
+            <i className='fa fa-angle-right' /> {props.text}{' '}
             <i className='fa fa-angle-right' /> {props.sub}
           </div>
         </div>

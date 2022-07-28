@@ -9,13 +9,15 @@ const AbroadSchedule = () => {
       <Header text={'관리형 조기유학'} sub={'일일스케줄'} />
 
       <div className='container'>
-        <h4>일일스케줄</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>관리형 조기유학</div>
             <Abroad current={'schedule'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>일일스케줄</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

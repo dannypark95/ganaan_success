@@ -9,13 +9,15 @@ const CommunityItems = () => {
       <Header text={'커뮤니티'} sub={'연수준비물'} />
 
       <div className='container'>
-        <h4>연수준비물</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>커뮤니티</div>
             <Community current={'items'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>연수준비물</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

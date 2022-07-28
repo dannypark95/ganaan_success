@@ -9,13 +9,15 @@ const AbroadProgram = () => {
       <Header text={'관리형 조기유학'} sub={'국제학교 입학 프로그램'} />
 
       <div className='container'>
-        <h4>국제학교 입학 프로그램</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>관리형 조기유학</div>
             <Abroad current={'program'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>국제학교 입학 프로그램</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

@@ -560,7 +560,7 @@ table th {
 
 .pageGrid {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 3.5fr;
   grid-template-rows: 1fr;
   align-items: center;
 }
@@ -568,7 +568,8 @@ table th {
 .page-g1 {
   grid-column: 1;
   grid-row: 1;
-  padding: 1rem 1rem;
+  padding: 0rem 1rem;
+  height: -webkit-fill-available;
 }
 
 .page-g2 {
@@ -617,13 +618,34 @@ table th {
   font-size: 15px;
 }
 
-h4 {
+.pageTitle {
   text-align: left;
   margin-bottom: 2rem !important;
+  font-size: 30px;
+  color: #333;
+  font-weight: bolder;
+}
+
+.subTitleNav {
+  background: linear-gradient(
+    to top,
+    rgba(178, 13, 13, 0.2) 40%,
+    transparent 50%
+  );
+}
+
+.navSide:hover {
+  color: #fff;
+  background-color: #d84b4b;
+  font-weight: bold;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .current {
-  background-color: #f2f2f2;
+  background-color: #b20d0d !important;
+  color: #fff !important;
+  font-weight: bold;
 }
 
 .middleBanner {
@@ -633,6 +655,30 @@ h4 {
 .navItems {
   z-index: 10;
   margin-top: 5px;
+}
+
+.navSide {
+  border-bottom: 0;
+  color: #000000;
+  padding: 8px 0 8px 20px;
+  text-align: left;
+  background-color: #e6e6e6;
+  font-size: 14px;
+}
+
+.sideTitle {
+  text-align: left;
+  font-size: 22px;
+  color: #333;
+  padding: 20px 20px 10px;
+  letter-spacing: -1px;
+  border-bottom: 3px solid #b20d0d;
+  font-weight: bolder;
+  margin-top: 1.5rem;
+}
+
+.homeImg {
+  color: #fff;
 }
 
 @media (max-width: 1710px) {
@@ -841,5 +887,9 @@ h4 {
   .banner {
     object-fit: cover;
     height: 250px;
+  }
+
+  .page-g1 {
+    display: none;
   }
 }

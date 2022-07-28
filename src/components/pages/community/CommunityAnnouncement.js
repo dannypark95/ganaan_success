@@ -9,13 +9,15 @@ const CommunityAnnouncement = () => {
       <Header text={'커뮤니티'} sub={'공지사항'} />
 
       <div className='container'>
-        <h4>공지사항</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>커뮤니티</div>
             <Community current={'announcement'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>공지사항</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

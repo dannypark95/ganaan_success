@@ -9,13 +9,15 @@ const WalkinIntro = () => {
       <Header text={'영어캠프'} sub={'학원안내'} />
 
       <div className='container'>
-        <h4>학원안내</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>WALK-IN</div>
             <Walkin current={'intro'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>학원안내</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur

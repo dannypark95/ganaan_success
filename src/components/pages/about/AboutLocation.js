@@ -9,13 +9,15 @@ const AboutLocation = () => {
       <Header text={'학원소개'} sub={'위치'} />
 
       <div className='container'>
-        <h4>위치</h4>
-
         <div className='pageGrid'>
           <div className='page-g1'>
+            <div className='sideTitle'>학원소개</div>
             <About current={'location'} />
           </div>
           <div className='page-g2'>
+            <div className='pageTitle'>
+              <span className='subTitleNav'>위치</span>
+            </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
             quod saepe animi dolor odit magni quia consequuntur, a aspernatur
