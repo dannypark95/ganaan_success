@@ -12,7 +12,7 @@ const Header = (props) => {
         />
         <div className='bannerOverlay'></div>
         <div className='headerText'>
-          {props.text}
+          <div className='bannerText'>{props.text}</div>
           <div className='subHeader'>
             <Link to='/'>
               <i className='fa fa-home homeImg' />

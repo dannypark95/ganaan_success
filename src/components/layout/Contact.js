@@ -7,9 +7,11 @@ const Contact = () => {
       <br></br>
       <div> XX사무소 : (XXXXX) 서울시 XX구 XX대로 XXX (XX동) </div>
       <div>
-        상담문의 : XX-XXX-XXXX / 홈페이지 : www.XXXXXXX.com / 이메일 :
-        XXXXXXX@XXXXXXX.com
+        상담문의 : XX-XXX-XXXX / 홈페이지 : www.cebusuccess.com / 이메일 :
+        cebusuccess@gmail.com
       </div>
+      <div>법인체등록번호 : CS200427256</div>
+      <div>SSP인가 번호 : NO.AFF-05-089</div>
     </div>
   );
 };

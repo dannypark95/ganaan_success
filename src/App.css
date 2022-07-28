@@ -12,6 +12,21 @@
     url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff')
       format('woff');
 }
+@font-face {
+  font-family: 'EarlyFontDiary';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OTWelcomeRA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Global Styles */
 :root {
@@ -681,6 +696,58 @@ table th {
   color: #fff;
 }
 
+.historyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.history-g1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.history-g2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.history {
+  display: flex;
+  padding: 1rem 1rem 1rem 1rem;
+  border-bottom: 1px solid rgba(40, 40, 40, 0.562);
+}
+
+.historyDesc {
+  width: 40vw;
+  margin-top: 2px;
+}
+
+.historyYear {
+  width: 6vw;
+  font-size: 21px;
+  font-family: 'EarlyFontDiary';
+  color: rgb(32, 31, 31);
+}
+
+.historyMonth {
+  width: 6vw;
+  font-size: 15px;
+  font-family: 'EarlyFontDiary';
+  margin-top: 2px;
+}
+
+.mobile_446,
+.mobile_489,
+.mobile_426 {
+  display: none;
+}
+
+.bannerText {
+  font-family: 'OTWelcomeRA';
+}
+
 @media (max-width: 1710px) {
   .navTitle {
     padding: 0 3vw;
@@ -712,7 +779,21 @@ table th {
   .mainLogo {
     width: 200px;
   }
+
+  .historyDesc {
+    width: 44vw;
+  }
 }
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 900px !important;
+  }
+  .historyDesc {
+    width: 50vw;
+  }
+}
+
 /* Mobile Styles */
 @media (max-width: 900px) {
   .navLogo {
@@ -891,5 +972,61 @@ table th {
 
   .page-g1 {
     display: none;
+  }
+  .page-g2 {
+    grid-column: auto;
+    grid-row: 1;
+  }
+
+  .historyYear {
+    width: 9vw;
+    font-size: 17px;
+  }
+
+  .historyMonth {
+    width: 11.5vw;
+    font-size: 13px;
+  }
+
+  .headerBanner {
+    height: auto;
+  }
+
+  .historyDesc {
+    width: 65vw;
+    font-size: 13px;
+  }
+
+  .pageTitle {
+    font-size: 25px;
+    margin-bottom: 1rem !important;
+  }
+
+  .history {
+    padding: 1rem 0rem;
+  }
+}
+
+@media (max-width: 489px) {
+  .mobile_489 {
+    display: block;
+  }
+  .bannerText {
+    font-size: 30px;
+  }
+  .subHeader {
+    display: none;
+  }
+}
+
+@media (max-width: 446px) {
+  .mobile_446 {
+    display: block;
+  }
+}
+
+@media (max-width: 426px) {
+  .mobile_426 {
+    display: block;
   }
 }
