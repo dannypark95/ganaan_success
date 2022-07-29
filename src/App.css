@@ -886,7 +886,7 @@ table th {
     border-bottom: 1px solid rgb(214, 214, 214);
     margin-top: 0px;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 18px;
   }
   .contact-info {
     padding: 2rem 2rem;
@@ -899,8 +899,8 @@ table th {
   }
 
   .navItemsMenu div {
-    padding: 0.3rem 7vw;
-    font-size: 13px;
+    padding: 0.75rem 7vw;
+    font-size: 16px;
   }
 
   .navItemsMenu a {
@@ -932,7 +932,7 @@ table th {
 
   .navTitle:hover {
     color: rgb(33, 33, 33);
-    /* font-weight: bolder; */
+    font-weight: bold;
   }
 
   .dropdownX {
