@@ -28,6 +28,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'MYYeongnamnu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Global Styles */
 :root {
   --primary-color: #dc3545;
@@ -414,6 +422,7 @@ table th {
   height: auto;
   display: flex;
   margin-top: 18px;
+  width: 220px;
 }
 
 .navList {
@@ -585,6 +594,7 @@ table th {
   grid-row: 1;
   padding: 0rem 1rem;
   height: -webkit-fill-available;
+  /* align-items: baseline ; */
 }
 
 .page-g2 {
@@ -748,6 +758,21 @@ table th {
   font-family: 'OTWelcomeRA';
 }
 
+.introText {
+  text-align: left;
+  padding: 1rem 5rem;
+}
+
+.introText span {
+  font-weight: bolder;
+  color: #3a32c3;
+}
+
+.signature {
+  text-align: right;
+}
+
+/* Mobile Version */
 @media (max-width: 1710px) {
   .navTitle {
     padding: 0 3vw;
@@ -976,6 +1001,7 @@ table th {
   .page-g2 {
     grid-column: auto;
     grid-row: 1;
+    width: 100vw;
   }
 
   .historyYear {
@@ -1005,6 +1031,10 @@ table th {
   .history {
     padding: 1rem 0rem;
   }
+
+  .introText {
+    padding: 1rem 2rem;
+  }
 }
 
 @media (max-width: 489px) {
@@ -1025,7 +1055,7 @@ table th {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 437px) {
   .mobile_426 {
     display: block;
   }
