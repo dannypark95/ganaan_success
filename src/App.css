@@ -530,8 +530,6 @@ table th {
 }
 
 .logo {
-  /* height: 90px;
-  margin-top: -10px; */
   margin-top: -0.5rem;
   margin-bottom: 1rem;
 }
@@ -696,7 +694,7 @@ table th {
   color: #333;
   padding: 20px 20px 10px;
   letter-spacing: -1px;
-  border-bottom: 3px solid #b20d0d;
+  border-bottom: 3px solid #6d0a0a;
   font-weight: bolder;
   margin-top: 1.5rem;
 }
@@ -749,7 +747,8 @@ table th {
 
 .mobile_446,
 .mobile_489,
-.mobile_426 {
+.mobile_426,
+.mobile_427 {
   display: none;
 }
 
@@ -772,7 +771,90 @@ table th {
 }
 
 .sideHistory {
-  height: 1609px;
+  height: 1638px;
+}
+
+.sideIntro {
+  height: 573px;
+}
+
+.googleMap {
+  margin-left: 2.5rem;
+  height: 600px;
+  width: 600px;
+  margin-top: 2rem;
+}
+
+.address {
+  text-align: left;
+}
+
+.addressTitle {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.addressDetail {
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.successPin {
+  width: 20px;
+  height: 10px;
+  -webkit-filter: brightness(100%);
+}
+
+.successPin:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.mapTitle {
+  background: #fff;
+  border-color: rgb(0, 0, 0);
+  color: #333;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 2em;
+  margin-bottom: 0em;
+  padding: 3px 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  min-width: 11em;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.mapTitle:after {
+  border: 1em solid transparent;
+  border-top-color: #fff;
+  content: '';
+  margin-left: -1em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.successTitle {
+  margin-left: -57px;
+  margin-top: -57px;
+}
+
+.gmap_icon {
+  width: 60px;
+  margin-top: 1.5rem;
+  margin-left: 3rem;
 }
 
 /* Mobile Version */
@@ -1038,6 +1120,23 @@ table th {
   .introText {
     padding: 1rem 2rem;
   }
+
+  .googleMap {
+    margin-left: 3vw;
+    height: 40vh;
+    width: 90vw;
+    margin-top: 2rem;
+  }
+  .addressDetail,
+  .gmap_icon {
+    margin-left: 3vw;
+  }
+}
+
+@media (max-width: 529px) {
+  .addressDetail {
+    font-size: 3.5vw;
+  }
 }
 
 @media (max-width: 489px) {
@@ -1060,6 +1159,12 @@ table th {
 
 @media (max-width: 437px) {
   .mobile_426 {
+    display: block;
+  }
+}
+
+@media (max-width: 427px) {
+  .mobile_427 {
     display: block;
   }
 }

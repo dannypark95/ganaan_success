@@ -10,7 +10,7 @@ const Header = (props) => {
           src={'https://i.imgur.com/JEFQI0y.png'}
           alt='Header'
         />
-        <div className='bannerOverlay'></div>
+        {/* <div className='bannerOverlay'></div> */}
         <div className='headerText'>
           <div className='bannerText'>{props.text}</div>
           <div className='subHeader'>

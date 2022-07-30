@@ -10,7 +10,7 @@ const AboutIntro = () => {
 
       <div className='container'>
         <div className='pageGrid'>
-          <div className='page-g1'>
+          <div className='page-g1 sideIntro'>
             <div className='sideTitle'>학원소개</div>
             <About current={'intro'} />
           </div>

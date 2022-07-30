@@ -187,7 +187,7 @@ const AboutHistory = () => {
                     <li>06</li>
                     <li>05</li>
                     <li>01</li>
-                    <li className='mobile_426'>&nbsp;</li>
+                    <li className='mobile_427'>&nbsp;</li>
                     <li>01</li>
                   </div>
                   <div className='historyDesc'>

@@ -1,16 +1,58 @@
 import React from 'react';
+import GoogleMapReact from 'google-map-react';
 
 import Header from '../../layout/Header';
 import About from '../../layout/dropdown/About';
 
+import pin from '../../../media/google_pin.png';
+import map_icon from '../../../media/gmap_icon.png';
+
+// import { api } from '../../../credential';
+
 const AboutLocation = () => {
+  const defaultProps = {
+    center: {
+      lat: 10.339745451387795,
+      lng: 123.9118628092341,
+    },
+    zoom: 17,
+  };
+
+  const SuccessPin = () => (
+    <div>
+      <div className='successPin'>
+        <a
+          href='https://goo.gl/maps/2ViTLhgyuHPnSKGT6'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <img src={pin} alt='google_pin'></img>
+        </a>
+      </div>
+      <div className='successTitle'>
+        <div className='mapTitle'>Success Academy</div>
+      </div>
+    </div>
+  );
+
+  const MallPin = () => (
+    <div>
+      <div className='mallPin'>
+        <img src={pin} alt='google_pin'></img>
+      </div>
+      <div className='mallTitle'>
+        <div className='mapTitle'>가이사노 컨츄리몰</div>
+      </div>
+    </div>
+  );
+
   return (
     <div>
       <Header text={'학원소개'} sub={'위치'} />
 
       <div className='container'>
         <div className='pageGrid'>
-          <div className='page-g1'>
+          <div className='page-g1 sideLocation'>
             <div className='sideTitle'>학원소개</div>
             <About current={'location'} />
           </div>
@@ -18,13 +60,41 @@ const AboutLocation = () => {
             <div className='pageTitle'>
               <span className='subTitleNav'>위치</span>
             </div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Perspiciatis similique consequatur nostrum soluta amet quas alias
-            quod saepe animi dolor odit magni quia consequuntur, a aspernatur
-            cum quisquam vel, tenetur tempore necessitatibus quidem accusamus
-            at. Itaque aspernatur quod ratione non consequuntur numquam
-            doloribus? Accusantium assumenda recusandae possimus repellendus,
-            autem dicta!
+            <div className='googleMap'>
+              <GoogleMapReact
+                bootstrapURLKeys={{
+                  key: 'AIzaSyB2pd-7LEnR9-po4o0PctYFp4734RAKfys',
+                }}
+                defaultCenter={defaultProps.center}
+                defaultZoom={defaultProps.zoom}
+              >
+                <SuccessPin
+                  lat={defaultProps.center.lat}
+                  lng={defaultProps.center.lng}
+                />
+
+                <MallPin lat={10.339994} lng={123.910197} />
+              </GoogleMapReact>
+            </div>
+            <div className='address'>
+              <div className='addressTitle'>
+                <span className='subTitleNav'>주소</span>
+              </div>
+              <div className='addressDetail'>
+                3rd Floor GCA Bldg, Gov. M. Cuenco Ave, Cebu City
+                <br></br>
+                바닐라드 가이사노 컨츄리몰 건너편 PDI콘도미디엄 2층
+              </div>
+              <div className='gmap_icon'>
+                <a
+                  href='https://goo.gl/maps/2ViTLhgyuHPnSKGT6'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img src={map_icon} alt='google_map'></img>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
