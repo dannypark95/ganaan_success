@@ -594,7 +594,6 @@ table th {
   grid-row: 1;
   padding: 0rem 1rem;
   height: -webkit-fill-available;
-  /* align-items: baseline ; */
 }
 
 .page-g2 {
@@ -770,6 +769,10 @@ table th {
 
 .signature {
   text-align: right;
+}
+
+.sideHistory {
+  height: 1609px;
 }
 
 /* Mobile Version */

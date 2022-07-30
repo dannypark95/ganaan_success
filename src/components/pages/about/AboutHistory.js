@@ -12,8 +12,10 @@ const AboutHistory = () => {
       <div className='container'>
         <div className='pageGrid'>
           <div className='page-g1'>
-            <div className='sideTitle'>학원소개</div>
-            <About current={'history'} />
+            <div className='sideHistory'>
+              <div className='sideTitle'>학원소개</div>
+              <About current={'history'} />
+            </div>
           </div>
           <div className='page-g2'>
             <div className='pageTitle'>
