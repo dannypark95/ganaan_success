@@ -727,7 +727,7 @@ table th {
 }
 
 .historyDesc {
-  width: 40vw;
+  width: 44vw;
   margin-top: 2px;
 }
 
@@ -798,8 +798,21 @@ table th {
 .addressDetail {
   margin-top: 1.5rem;
   margin-left: 3rem;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.75;
+}
+
+.gmap_icon {
+  -webkit-filter: brightness(100%);
+}
+
+.gmap_icon:hover {
+  -webkit-filter: brightness(60%);
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .successPin {
@@ -815,6 +828,11 @@ table th {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+.mallTitle {
+  margin-left: -3rem;
+  margin-top: -1.75rem;
 }
 
 .mapTitle {
@@ -857,6 +875,28 @@ table th {
   margin-left: 3rem;
 }
 
+.docMain {
+  text-align: left;
+}
+
+.docSubHeading {
+  font-size: 15px;
+  color: #2d2d2d;
+}
+
+.docItems {
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+.docListItem {
+  margin-left: 1.5rem;
+}
+
+.pageHistory {
+  max-width: 1500px;
+}
+
 /* Mobile Version */
 @media (max-width: 1710px) {
   .navTitle {
@@ -889,18 +929,11 @@ table th {
   .mainLogo {
     width: 200px;
   }
-
-  .historyDesc {
-    width: 44vw;
-  }
 }
 
 @media (max-width: 1000px) {
   .container {
     max-width: 900px !important;
-  }
-  .historyDesc {
-    width: 50vw;
   }
 }
 
@@ -1166,5 +1199,21 @@ table th {
 @media (max-width: 427px) {
   .mobile_427 {
     display: block;
+  }
+}
+
+/* Big screen  */
+@media only screen and (min-width: 1600px) {
+  .sideHistory {
+    width: 288px;
+  }
+  .historyDesc {
+    width: 700px;
+  }
+  .historyMonth {
+    width: 95px;
+  }
+  .historyYear {
+    width: 95px;
   }
 }

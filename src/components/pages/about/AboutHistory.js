@@ -9,7 +9,7 @@ const AboutHistory = () => {
     <div>
       <Header text={'학원소개'} sub={'연혁'} />
 
-      <div className='container'>
+      <div className='container pageHistory'>
         <div className='pageGrid'>
           <div className='page-g1 sideHistory'>
             <div className='sideTitle'>학원소개</div>

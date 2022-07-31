@@ -37,9 +37,6 @@ const AboutLocation = () => {
 
   const MallPin = () => (
     <div>
-      <div className='mallPin'>
-        <img src={pin} alt='google_pin'></img>
-      </div>
       <div className='mallTitle'>
         <div className='mapTitle'>가이사노 컨츄리몰</div>
       </div>
