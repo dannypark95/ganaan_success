@@ -7,7 +7,7 @@ const Contact = () => {
       <br></br>
       <div> XX사무소 : (XXXXX) 서울시 XX구 XX대로 XXX (XX동) </div>
       <div>
-        상담문의 : XX-XXX-XXXX / 홈페이지 : www.cebusuccess.com / 이메일 :
+        상담문의 : +63 9267203580 / 홈페이지 : www.cebusuccess.com / 이메일 :
         cebusuccess@gmail.com
       </div>
       <div>법인체등록번호 : CS200427256</div>

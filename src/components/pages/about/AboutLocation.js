@@ -79,8 +79,6 @@ const AboutLocation = () => {
               </div>
               <div className='addressDetail'>
                 3rd Floor GCA Bldg, Gov. M. Cuenco Ave, Cebu City
-                <br></br>
-                바닐라드 가이사노 컨츄리몰 건너편 PDI콘도미디엄 2층
               </div>
               <div className='gmap_icon'>
                 <a

@@ -886,7 +886,7 @@ table th {
 
 .docItems {
   margin-top: 1rem;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 .docListItem {
@@ -901,8 +901,8 @@ table th {
   display: none !important;
 }
 
-.docList {
-  line-height: 2.25;
+.docItems {
+  line-height: 2;
 }
 
 .docParentHeading {
@@ -923,6 +923,51 @@ table th {
   font-size: 5px;
   vertical-align: middle;
 }
+
+.docExtra {
+  margin-top: 0.75rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.permit {
+  width: 150px;
+  display: table-cell;
+  align-items: center;
+}
+
+.permitPicture {
+  display: table;
+  width: 100%;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.page-margin-left {
+  margin-left: 1.5rem;
+}
+
+.aboutDocSchools {
+  margin-top: 1rem;
+}
+
+.aboutDocIntro {
+  padding: 1rem 2rem;
+}
+
+.permitDesc_1 {
+  margin-top: 0.5em;
+  margin-left: -5px;
+}
+
+.permitDesc_2 {
+  margin-top: 0.5em;
+  margin-left: -16px;
+}
+
 /* Mobile Version */
 @media (max-width: 1710px) {
   .navTitle {
@@ -1097,7 +1142,7 @@ table th {
   .menuMobile {
     position: fixed;
     -webkit-transition: max-height 0.4s ease-in-out 0.4s;
-    -moz-transition: max-he ight 0.4s ease-in-out 0.4s;
+    -moz-transition: max-height 0.4s ease-in-out 0.4s;
     -o-transition: max-height 0.4s ease-in-out 0.4s;
     -ms-transition: max-height 0.4s ease-in-out 0.4s;
     transition: max-height 0.4s ease-in-out 0.4s;
@@ -1190,7 +1235,20 @@ table th {
   .gmap_icon {
     margin-left: 3vw;
   }
+
+  .docParentHeading {
+    margin-left: 0rem;
+  }
+
+  .docMain {
+    padding: 1rem 2rem;
+  }
+
+  .permitPicture {
+    margin-left: 5vw;
+  }
 }
+/* 900px above */
 
 @media (max-width: 529px) {
   .addressDetail {

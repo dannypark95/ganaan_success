@@ -23,16 +23,23 @@ const AboutHistory = () => {
             <div className='historyContent'>
               <ul>
                 <li className='history'>
+                  <div className='historyYear'>2014</div>
+                  <div className='historyMonth'>
+                    <li>01</li>
+                  </div>
+                  <div className='historyDesc'>
+                    <li>학원 이전 (GCA BLDG)</li>
+                  </div>
+                </li>
+                <li className='history'>
                   <div className='historyYear'>2013</div>
                   <div className='historyMonth'>
                     <li>03</li>
                     <li>01</li>
                   </div>
                   <div className='historyDesc'>
-                    <li>제4회 임직원대상 교육관리 프로그램 진행예정</li>
-                    <li>
-                      제5회 국제학교 유학생 대상 학업관리 프로그램 진행예정
-                    </li>
+                    <li>제4회 임직원대상 교육관리 프로그램 진행</li>
+                    <li>제5회 국제학교 유학생 대상 학업관리 프로그램 진행</li>
                   </div>
                 </li>
                 <li className='history'>
