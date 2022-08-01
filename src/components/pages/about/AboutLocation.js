@@ -12,8 +12,8 @@ import map_icon from '../../../media/gmap_icon.png';
 const AboutLocation = () => {
   const defaultProps = {
     center: {
-      lat: 10.339745451387795,
-      lng: 123.9118628092341,
+      lat: 10.342472885047503,
+      lng: 123.9123898963602,
     },
     zoom: 17,
   };
@@ -31,14 +31,6 @@ const AboutLocation = () => {
       </div>
       <div className='successTitle'>
         <div className='mapTitle'>Success Academy</div>
-      </div>
-    </div>
-  );
-
-  const MallPin = () => (
-    <div>
-      <div className='mallTitle'>
-        <div className='mapTitle'>가이사노 컨츄리몰</div>
       </div>
     </div>
   );
@@ -69,8 +61,6 @@ const AboutLocation = () => {
                   lat={defaultProps.center.lat}
                   lng={defaultProps.center.lng}
                 />
-
-                <MallPin lat={10.339994} lng={123.910197} />
               </GoogleMapReact>
             </div>
             <div className='address'>

@@ -928,10 +928,6 @@ table th {
   margin-top: 0.75rem;
 }
 
-.text-left {
-  text-align: left;
-}
-
 .permit {
   width: 150px;
   display: table-cell;
@@ -966,6 +962,23 @@ table th {
 .permitDesc_2 {
   margin-top: 0.5em;
   margin-left: -16px;
+}
+
+.currTable th,
+.currTable td {
+  text-align: center;
+}
+
+.rowSpanText {
+  vertical-align: middle;
+}
+
+.currTitle {
+  margin: 1rem 0;
+}
+
+.tableRowSpan {
+  vertical-align: middle;
 }
 
 /* Mobile Version */
@@ -1246,6 +1259,15 @@ table th {
 
   .permitPicture {
     margin-left: 5vw;
+  }
+
+  .currTable th,
+  .currTable td {
+    font-size: 10px;
+  }
+
+  .currTitle {
+    font-size: 16px;
   }
 }
 /* 900px above */
