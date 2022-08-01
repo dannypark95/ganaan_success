@@ -20,19 +20,19 @@ const AboutDocument = () => {
             </div>
 
             <div className='docMain'>
-              <h3>미성년자 여권발급</h3>
+              <h4>미성년자 여권발급</h4>
               <div className='docSubHeading'>
                 기존에 여권이 있는 어린이는 최소 6개월 이상 여권상 유호기간이
                 남아있어야 합니다.
               </div>
               <div className='docItems'>
                 <ul>
-                  <li>1. 여권발급신청서</li>
-                  <li>
+                  <li className='docList'>1. 여권발급신청서</li>
+                  <li className='docList'>
                     2. 여권용 사진 1매 (6개월 이내에 촬영한 사진. 단, 전자여권이
                     아닌 경우 2매)
                   </li>
-                  <li>
+                  <li className='docList'>
                     3. 여권 발급동의서 : 동의자가 직접 신청하는 경우는 생략
                     (동의자 신분증 필요)
                     <li className='docListItem'>
@@ -44,25 +44,25 @@ const AboutDocument = () => {
                       됩니다.
                     </li>
                   </li>
-                  <li>
+                  <li className='docList'>
                     4. 동의자의 인감증명서 (여권 발급동의서에 날인된 인감과
                     동일여부 확인)
                     <li className='docListItem'>
                       - 동의자(=부모,친권자)가 집접 신청시는 동의자 신분증 필요
                     </li>
                   </li>
-                  <li>
+                  <li className='docList'>
                     5. 기본증명서 및 가족관계증명서 (행정전산망으로 확인
                     불가능시) : 동의자(=부모,친권자)가 직접 신청시는 생략
                   </li>
                 </ul>
                 <div className='docExtra'>
-                  - 여권발급수수료는 전자여권기준 복수여권(5년초과 10년이내) :
-                  5만5천원
+                  <i className='fa fa-angle-right' /> 여권발급수수료는
+                  전자여권기준 복수여권(5년초과 10년이내) : 5만5천원
                 </div>
                 <div className='docExtra'>
-                  - 여권발급관련 세부내용은 아래 외교통상부 여권안내 홈페이지를
-                  참고하세요!
+                  <i className='fa fa-angle-right' /> 여권발급관련 세부내용은
+                  아래 외교통상부 여권안내 홈페이지를 참고하세요!
                 </div>
                 <div className='docExtraLink'>
                   <a href='www.passport.go.kr' target='_blank' rel='noreferrer'>
@@ -70,15 +70,19 @@ const AboutDocument = () => {
                   </a>
                 </div>
               </div>
-              <h3>부모님 동의서(영문) 공증</h3>
+              <h4 className='docParent'>부모님 동의서(영문) 공증</h4>
               <div className='docItems'>
                 <ul>
-                  <li>
-                    반드시 국내에서 공증사무소의 공증을 받아야 합니다.
+                  <li className='docParentHeading'>
+                    <div className='docStrong'>
+                      <i class='fa fa-circle docCircle' /> 반드시 국내에서
+                      공증사무소의 공증을 받아야 합니다.
+                    </div>
+
                     <li>
-                      각 여권과 동일한 영문 이름 철자의 영문 주민등록등본상
-                      이름을 부모님 동의서(영문)에 영문으로 기재하시고
-                      공증받으셔야 합니다.
+                      <i className='fa fa-angle-right' /> 각 여권과 동일한 영문
+                      이름 철자의 영문 주민등록등본상 이름을 부모님
+                      동의서(영문)에 영문으로 기재하시고 공증받으셔야 합니다.
                       <li className='docListItem'>
                         - 인솔자(=만 20세 이상의 동반자, 혼자 가는 어린이의 경우
                         필리핀 인계자)또안 여권과 동일할 영문 이름을 기재해야
@@ -96,10 +100,14 @@ const AboutDocument = () => {
                       </li>
                     </li>
                   </li>
-                  <li>
-                    부모님 동의서 공증사모소에서 공증시 필요서류 및 관련사항
+                  <li className='docParentHeading'>
+                    <div className='docStrong'>
+                      <i class='fa fa-circle docCircle' /> 부모님 동의서
+                      공증사무소에서 공증시 필요서류 및 관련사항
+                    </div>
                     <li>
-                      부모님 두분이 공증사무소에 직접가는 경우
+                      <i className='fa fa-angle-right' /> 부모님 두분이
+                      공증사무소에 직접가는 경우
                       <li className='docListItem'>
                         - 부모님 두 분 다 신분증 및 도장을 지참하시고 부모님
                         동의서(영문, 한글) 각 1부씩을 작정 지참하시어 방문하시면
@@ -122,7 +130,8 @@ const AboutDocument = () => {
                       </li>
                     </li>
                     <li>
-                      부모님중 한분이 공증사무소에 가시는 경우
+                      <i className='fa fa-angle-right' /> 부모님중 한분이
+                      공증사무소에 가시는 경우
                       <li className='docListItem'>
                         - 방법은 동일하지만, 부모님 중 한 분만 가신다면 직접
                         가시는 부모님은 신분증 및 도장을 지참하시고 못가시는
@@ -130,7 +139,8 @@ const AboutDocument = () => {
                       </li>
                     </li>
                     <li>
-                      부모님중 한분도 안가시고 대리인이 공증사무소에 가시는경우
+                      <i className='fa fa-angle-right' /> 부모님중 한분도
+                      안가시고 대리인이 공증사무소에 가시는경우
                       <li className='docListItem'>
                         - 방법은 동일하시만, 부모님 두분의 인감증명서 각1통과
                         두분의 인감도장 그리고 대리인은 신분증을 지참하시고
