@@ -1,15 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import banner01 from '../../media/banner01.png';
+
 const Header = (props) => {
   return (
     <div>
       <div className='headerBanner'>
-        <img
-          className='headerPic'
-          src={'https://i.imgur.com/JEFQI0y.png'}
-          alt='Header'
-        />
+        <img className='headerPic' src={banner01} alt='Header' />
         {/* <div className='bannerOverlay'></div> */}
         <div className='headerText'>
           <div className='bannerText'>{props.text}</div>
