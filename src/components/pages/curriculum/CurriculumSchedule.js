@@ -25,7 +25,7 @@ const CurriculumSchedule = () => {
                 석쎄스 어학원 + 가나안 국제학교 DAILY SCHEDULE
               </h3>
               <div className='currTable text-center'>
-                <Table striped bordered hover>
+                <Table striped bordered>
                   <thead>
                     <tr>
                       <th colSpan={2}> 시간</th>
