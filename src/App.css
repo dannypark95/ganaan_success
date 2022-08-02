@@ -965,7 +965,9 @@ table th {
 }
 
 .currTable th,
-.currTable td {
+.currTable td,
+.currMenuWeek th,
+.currMenuWeek td {
   text-align: center;
 }
 
@@ -979,6 +981,41 @@ table th {
 
 .tableRowSpan {
   vertical-align: middle;
+}
+
+.ganaan_pic {
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.currPermitPicture {
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+
+.currGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.curr-g1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.curr-g2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.mobileCurrLocation {
+  display: none;
 }
 
 /* Mobile Version */
@@ -1268,6 +1305,24 @@ table th {
 
   .currTitle {
     font-size: 16px;
+  }
+
+  .ganaan_pic {
+    width: 60vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .mobileCurrLocation {
+    display: block;
+  }
+
+  .curr-g1 {
+    display: none;
+  }
+
+  .curr-g2 {
+    width: 90vw;
   }
 }
 /* 900px above */
