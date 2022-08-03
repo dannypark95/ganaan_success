@@ -1322,7 +1322,12 @@ table th {
   }
 
   .curr-g2 {
-    width: 90vw;
+    width: 70vw;
+    margin-left: 6vw;
+  }
+
+  .currGrid {
+    display: inherit;
   }
 }
 /* 900px above */
