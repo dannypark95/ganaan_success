@@ -1018,6 +1018,11 @@ table th {
   display: none;
 }
 
+.currMenuWeek ul {
+  margin-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
 /* Mobile Version */
 @media (max-width: 1710px) {
   .navTitle {
