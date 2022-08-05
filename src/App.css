@@ -1142,7 +1142,7 @@ table th {
 }
 
 .currGuideSidePicture {
-  width: 20vw;
+  width: 310px;
 }
 
 .currGuide-g1 {
@@ -1151,6 +1151,10 @@ table th {
 
 .currGuideSummary {
   line-height: 1.75;
+}
+
+.currGuideSidePicture {
+  margin-left: 1rem;
 }
 
 /* Mobile Version */
@@ -1464,8 +1468,22 @@ table th {
   .currGrid {
     display: inherit;
   }
+
+  .currGuideSidePicture {
+    width: 250px;
+  }
 }
 /* 900px above */
+
+@media (max-width: 582px) {
+  .currGuideSidePicture {
+    display: none;
+  }
+  .currGuide-g1 {
+    width: 90vw;
+    padding: 1rem 1rem;
+  }
+}
 
 @media (max-width: 529px) {
   .addressDetail {
@@ -1532,5 +1550,8 @@ table th {
   }
   .currGuide-g1 {
     width: 570px;
+  }
+  .currGuideBody {
+    width: 980px;
   }
 }
