@@ -602,6 +602,7 @@ table th {
 
 .navTitle:hover {
   color: #003465;
+  cursor: pointer;
   -webkit-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
 }
@@ -703,19 +704,22 @@ table th {
   color: #fff;
 }
 
-.historyGrid {
+.historyGrid,
+.currGuideGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
 }
 
-.history-g1 {
+.history-g1,
+.currGuide-g1 {
   grid-column: 1;
   grid-row: 1;
 }
 
-.history-g2 {
+.history-g2,
+.currGuide-g2 {
   grid-column: 2;
   grid-row: 1;
 }
@@ -967,7 +971,9 @@ table th {
 .currTable th,
 .currTable td,
 .currMenuWeek th,
-.currMenuWeek td {
+.currMenuWeek td,
+.currPriceTable th,
+.currPriceTable td {
   text-align: center;
 }
 
@@ -1021,6 +1027,130 @@ table th {
 .currMenuWeek ul {
   margin-bottom: 0rem !important;
   padding-left: 0rem !important;
+}
+
+.currMenuPanel {
+  text-align: left;
+  border-bottom: solid #efefef 1px;
+  width: 103%;
+}
+
+.ta .wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.tabs {
+  position: relative;
+  margin: 3rem 0;
+  background: #1abc9c;
+  height: 14.75rem;
+}
+.tabs::before,
+.tabs::after {
+  content: '';
+  display: table;
+}
+.tabs::after {
+  clear: both;
+}
+.tab {
+  float: left;
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: #efefef;
+  font-size: 16px;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 2.5em;
+  background: #1abc9c;
+  border-right: 0.125rem solid #16a085;
+  color: #fff;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  font-weight: 400;
+}
+.tab-label:hover {
+  top: -2rem;
+  transition: top 0.25s;
+  background: #14856e;
+}
+.tab-content {
+  height: 12rem;
+  position: absolute;
+  z-index: 1;
+  top: 2.75em;
+  left: 0;
+  padding: 1.618rem;
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0.25rem solid #bdc3c7;
+  opacity: 0;
+  transition: all 0.35s;
+}
+.tab-switch:checked + .tab-label {
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0;
+  border-right: 0.125rem solid #fff;
+  transition: all 0.35s;
+  z-index: 1;
+  top: -0.0625rem;
+}
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}
+
+.currPriceTable {
+  margin: 2rem 2rem;
+}
+
+.currGuideExtra {
+  margin: 2rem 0rem;
+}
+
+.currGuideBodyTitle {
+  font-size: 20px;
+}
+
+.highlight {
+  background: linear-gradient(to top, rgb(255, 255, 85) 50%, transparent 50%);
+  display: inline;
+  font-weight: 500;
+}
+
+.currGuideTitleSub {
+  margin-bottom: 2rem;
+  font-size: 16px;
+}
+
+.currGuidePriceSale {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a32c3;
+}
+
+.currGuideSidePicture {
+  width: 20vw;
+}
+
+.currGuide-g1 {
+  width: 34vw;
+}
+
+.currGuideSummary {
+  line-height: 1.75;
 }
 
 /* Mobile Version */
@@ -1341,6 +1471,18 @@ table th {
   .addressDetail {
     font-size: 3.5vw;
   }
+
+  .currMenuWeek {
+    font-size: 10px;
+  }
+
+  .permit {
+    width: 110px;
+  }
+
+  .permitDesc {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 489px) {
@@ -1375,7 +1517,8 @@ table th {
 
 /* Big screen  */
 @media only screen and (min-width: 1600px) {
-  .sideHistory {
+  .sideHistory,
+  .sideCurr {
     width: 288px;
   }
   .historyDesc {
@@ -1386,5 +1529,8 @@ table th {
   }
   .historyYear {
     width: 95px;
+  }
+  .currGuide-g1 {
+    width: 570px;
   }
 }

@@ -64,7 +64,9 @@ const CurriculumLocation = () => {
               <div className='currPermitPicture permitPicture'>
                 <div className='permit'>
                   <img src={ssp_permit} alt='ssp_permit' className='permit' />
-                  <div className='permitDesc_1'>필리핀 이민국 인증 (SSP)</div>
+                  <div className='permitDesc_1 permitDesc'>
+                    필리핀 이민국 인증 (SSP)
+                  </div>
                 </div>
                 <div className='permit'>
                   <img
@@ -72,7 +74,9 @@ const CurriculumLocation = () => {
                     alt='tesda_permit'
                     className='permit'
                   />
-                  <div className='permitDesc_2'>필리핀 교육청 인증 (DEPED)</div>
+                  <div className='permitDesc_2 permitDesc'>
+                    필리핀 교육청 인증 (DEPED)
+                  </div>
                 </div>
               </div>
             </div>
