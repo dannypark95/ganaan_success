@@ -72,7 +72,7 @@ const Community = (props) => {
       </Link>
       <Link to='/community/forum' onClick={onClick}>
         <div className={`dropdownList dropdownBetween ${navSide} ${forum}`}>
-          상담게시판
+          상담요청
         </div>
       </Link>
       <Link to='/community/review' onClick={onClick}>

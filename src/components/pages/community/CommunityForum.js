@@ -16,7 +16,7 @@ const CommunityForum = () => {
           </div>
           <div className='page-g2'>
             <div className='pageTitle'>
-              <span className='subTitleNav'>상담게시판</span>
+              <span className='subTitleNav'>상담요청</span>
             </div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Perspiciatis similique consequatur nostrum soluta amet quas alias
