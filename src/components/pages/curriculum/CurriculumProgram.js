@@ -35,7 +35,7 @@ const CurriculumProgram = () => {
             </div>
 
             <div>
-              <div className='programList programGrid text-center'>
+              <div className='programList programGrid'>
                 <div className='program-g1 fs-5 fw-bold'>
                   고품격 영어교육과 학습환경 제공
                   <div className='fs-6 fw-light mt-2 mx-3 text-left'>
@@ -45,18 +45,22 @@ const CurriculumProgram = () => {
                     제공됩니다.
                   </div>
                 </div>
-                <img
-                  src={program_1}
-                  alt='program_pic_1'
-                  className='program-g2 img-fluid rounded imgShadow w-75 m-5'
-                />
+                <div className='text-center'>
+                  <img
+                    src={program_1}
+                    alt='program_pic_1'
+                    className='program-g2 img-fluid rounded imgShadow w-75'
+                  />
+                </div>
               </div>
-              <div className='programList programGrid text-center'>
-                <img
-                  src={program_4}
-                  alt='program_pic_4'
-                  className='program-g1 img-fluid rounded imgShadow w-75 m-3 '
-                />
+              <div className='programList programGrid'>
+                <div className='text-center'>
+                  <img
+                    src={program_4}
+                    alt='program_pic_4'
+                    className='program-g1 img-fluid rounded imgShadow w-75'
+                  />
+                </div>
                 <div className='program-g2 fs-5 fw-bold programHeading'>
                   꼼꼼하고 정확한 평가시스템
                   <div className='fs-6 fw-light mt-2 mx-3 text-left programDisc'>
@@ -66,7 +70,7 @@ const CurriculumProgram = () => {
                   </div>
                 </div>
               </div>
-              <div className='programList programGrid text-center'>
+              <div className='programList programGrid'>
                 <div className='program-g1 fs-5 fw-bold'>
                   영어로 배우는 여러가지 액티비티
                   <div className='fs-6 fw-light mt-2 mx-3 text-left'>
@@ -76,18 +80,22 @@ const CurriculumProgram = () => {
                     수 있고 흥미를 느낄 수 있습니다.
                   </div>
                 </div>
-                <img
-                  src={program_2}
-                  alt='program_pic_2'
-                  className='program-g2 img-fluid rounded imgShadow w-75 m-5'
-                />
+                <div className='text-center'>
+                  <img
+                    src={program_2}
+                    alt='program_pic_2'
+                    className='program-g2 img-fluid rounded imgShadow w-75'
+                  />
+                </div>
               </div>
-              <div className='programList programGrid text-center'>
-                <img
-                  src={program_5}
-                  alt='program_pic_5'
-                  className='program-g1 img-fluid rounded imgShadow w-75 m-5'
-                />
+              <div className='programList programGrid'>
+                <div className='text-center'>
+                  <img
+                    src={program_5}
+                    alt='program_pic_5'
+                    className='program-g1 img-fluid rounded imgShadow w-75 currMarginPic'
+                  />
+                </div>
                 <div className='program-g2 fs-5 fw-bold'>
                   글로벌 인재 양성 캠프
                   <div className='fs-6 fw-light mt-2 mx-3 text-left'>
@@ -96,7 +104,7 @@ const CurriculumProgram = () => {
                   </div>
                 </div>
               </div>
-              <div className='programList programGrid text-center'>
+              <div className='programList programGrid'>
                 <div className='program-g1 fs-5 fw-bold'>
                   정식 자격증 갖춘 선생님
                   <div className='fs-6 fw-light mt-2 mx-3 text-left'>
@@ -104,11 +112,13 @@ const CurriculumProgram = () => {
                     통한 다양한 액티비티 활동과 담임교사가 24시간 케어합니다.
                   </div>
                 </div>
-                <img
-                  src={program_3}
-                  alt='program_pic_3'
-                  className='program-g2 img-fluid rounded imgShadow w-75 m-5'
-                />
+                <div className='text-center'>
+                  <img
+                    src={program_3}
+                    alt='program_pic_3'
+                    className='program-g2 img-fluid rounded imgShadow w-75'
+                  />
+                </div>
               </div>
             </div>
           </div>
