@@ -36,6 +36,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Global Styles */
 :root {
   --primary-color: #dc3545;
@@ -1157,6 +1165,34 @@ table th {
   margin-left: 1rem;
 }
 
+.applyButton {
+  background-color: #2d2d2d !important;
+}
+
+.programTitle {
+  color: #ffc107;
+  font-weight: bolder;
+  font-family: 'IBMPlexSansKR-Regular';
+  text-decoration: underline;
+}
+
+.programGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.program-g1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.program_g2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
 /* Mobile Version */
 @media (max-width: 1710px) {
   .navTitle {
@@ -1553,5 +1589,25 @@ table th {
   }
   .currGuideBody {
     width: 980px;
+  }
+
+  .headerPic {
+    width: 100vw;
+  }
+
+  .navName {
+    font-size: 16px;
+  }
+
+  .navTitle {
+    padding: 0 2vw;
+  }
+
+  .nav-g2 {
+    margin-right: 8rem;
+  }
+
+  .navItemsMenu div {
+    font-size: 14px;
   }
 }
