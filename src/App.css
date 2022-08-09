@@ -632,8 +632,8 @@ table th {
 }
 
 .headerPic {
-  -webkit-filter: brightness(60%);
-  filter: brightness(60%);
+  -webkit-filter: brightness(40%);
+  filter: brightness(40%);
 }
 
 .headerText {
@@ -1644,5 +1644,8 @@ table th {
 
   .navItemsMenu div {
     font-size: 14px;
+  }
+  .navbar ul {
+    margin-top: 0.9rem;
   }
 }

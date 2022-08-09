@@ -6,7 +6,7 @@ import Walkin from '../../layout/dropdown/Walkin';
 const WalkinPickDrop = () => {
   return (
     <div>
-      <Header text={'영어캠프'} sub={'픽-드랍 서비스'} />
+      <Header text={'WALK-IN'} sub={'픽-드랍 서비스'} />
 
       <div className='container'>
         <div className='pageGrid'>
