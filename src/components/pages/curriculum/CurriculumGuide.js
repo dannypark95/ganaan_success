@@ -35,7 +35,7 @@ const CurriculumGuide = () => {
                   <img
                     src={study_pic}
                     alt='studying child'
-                    className='currGuideSidePicture'
+                    className='currGuideSidePicture rounded imgShadow'
                   />
                 </div>
               </div>

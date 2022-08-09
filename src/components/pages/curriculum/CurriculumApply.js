@@ -78,7 +78,7 @@ const CurriculumApply = () => {
                     <Form.Label>참가자 이름 (영어)</Form.Label>
                     <Form.Control type='name' />
                     <Form.Text className='text-muted'>
-                      여권에 표기된 영문이름과 동일해야 함.
+                      여권에 표기된 영문이름과 동일해야 합니다.
                     </Form.Text>
                   </Form.Group>
                 </Row>
@@ -114,20 +114,20 @@ const CurriculumApply = () => {
                 </Row>
                 <Form.Group controlId='gender' className='mb-4  '>
                   <Form.Label>성별</Form.Label>
-                  <div key={`inline-checkbox`}>
+                  <div key={`gender-checkbox`}>
                     <Form.Check
                       inline
                       label='남자'
-                      name='group1'
+                      name='gender'
                       type='radio'
-                      id={`inline-checkbox-1`}
+                      id={`gender-checkbox-1`}
                     />
                     <Form.Check
                       inline
                       label='여자'
-                      name='group1'
+                      name='gender'
                       type='radio'
-                      id={`inline-checkbox-1`}
+                      id={`gender-checkbox-1`}
                     />
                   </div>
                 </Form.Group>
@@ -164,20 +164,20 @@ const CurriculumApply = () => {
                 <Row className='mb-3'>
                   <Form.Group controlId='abroad' as={Col}>
                     <Form.Label>해외 영어연수</Form.Label>
-                    <div key={`inline-checkbox`}>
+                    <div key={`abroad-checkbox`}>
                       <Form.Check
                         inline
                         label='있음'
-                        name='group1'
+                        name='abroad'
                         type='radio'
-                        id={`inline-checkbox-1`}
+                        id={`abroad-checkbox-1`}
                       />
                       <Form.Check
                         inline
                         label='없음'
-                        name='group1'
+                        name='abroad'
                         type='radio'
-                        id={`inline-checkbox-1`}
+                        id={`abroad-checkbox-1`}
                       />
                     </div>
                   </Form.Group>
@@ -190,59 +190,94 @@ const CurriculumApply = () => {
                 <hr></hr>
 
                 <Row className='mb-3'>
-                  <Form.Group as={Col} controlId='formCountry'>
+                  <Form.Group as={Col} controlId='formDuration'>
                     <Form.Label>연수기간</Form.Label>
-                    <div key={`inline-checkbox`}>
+                    <div key={`duration-checkbox`}>
                       <Form.Check
                         inline
                         label='4주(1차) : 2023년 1월1일 ~ 1월28일'
-                        name='group1'
+                        name='duration'
                         type='radio'
-                        id={`inline-checkbox-1`}
+                        id={`duration-checkbox-1`}
                       />
                       <Form.Check
                         inline
                         label='4주(2차) : 2023년 1월15일 ~ 2월11일'
-                        name='group1'
+                        name='duration'
                         type='radio'
-                        id={`inline-checkbox-1`}
+                        id={`duration-checkbox-1`}
                       />
                       <Form.Check
                         label='6주 : 2023년 1월1일 ~ 2월11일'
-                        name='group1'
+                        name='duration'
                         type='radio'
-                        id={`inline-checkbox-1`}
+                        id={`duration-checkbox-1`}
                       />
                       <Form.Check
                         inline
                         label='8주 : 2023년 1월1일 ~ 2월25일'
-                        name='group1'
+                        name='duration'
                         type='radio'
-                        id={`inline-checkbox-1`}
+                        id={`duration-checkbox-1`}
                       />
                     </div>
                   </Form.Group>
                   <Form.Group controlId='airport' as={Col}>
                     <Form.Label>출발공항</Form.Label>
-                    <div key={`inline-checkbox`}>
+                    <div key={`airport-checkbox`}>
                       <Form.Check
                         inline
                         label='인천출발'
-                        name='group1'
+                        name='airport'
                         type='radio'
-                        id={`inline-checkbox-1`}
+                        id={`airport-checkbox-1`}
                       />
                       <Form.Check
                         inline
                         label='부산출발'
-                        name='group1'
+                        name='airport'
                         type='radio'
-                        id={`inline-checkbox-1`}
+                        id={`airport-checkbox-1`}
                       />
                     </div>
                   </Form.Group>
                 </Row>
 
+                <hr />
+
+                <Form.Group className='mb-3'>
+                  <Form.Label>학생성격 및 영어능력</Form.Label>
+                  <textarea
+                    class='form-control'
+                    rows='5'
+                    id='comment'
+                  ></textarea>
+                  <Form.Text className='text-muted'>
+                    학생 성격 (성향) 및 영어 능력을 간단하게 적어주세요.
+                  </Form.Text>
+                </Form.Group>
+
+                <Form.Group className='mb-3'>
+                  <Form.Label>건강 숙지사항</Form.Label>
+                  <textarea
+                    class='form-control'
+                    rows='5'
+                    id='comment'
+                  ></textarea>
+                  <Form.Text className='text-muted'>
+                    복용하는 약, 알레르기, 조심해야 하는 음식 등 참고해야 할
+                    부분을 적어주세요.
+                  </Form.Text>
+                </Form.Group>
+
+                <Form.Group>
+                  <Form.Label>기타 참고사항</Form.Label>
+                  <textarea
+                    class='form-control'
+                    rows='5'
+                    id='comment'
+                  ></textarea>
+                </Form.Group>
                 <hr />
 
                 <div className='text-center'>

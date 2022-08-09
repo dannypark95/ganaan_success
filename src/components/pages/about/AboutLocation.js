@@ -49,7 +49,7 @@ const AboutLocation = () => {
             <div className='pageTitle'>
               <span className='subTitleNav'>위치</span>
             </div>
-            <div className='googleMap'>
+            <div className='googleMap rounded imgShadow'>
               <GoogleMapReact
                 bootstrapURLKeys={{
                   key: 'AIzaSyB2pd-7LEnR9-po4o0PctYFp4734RAKfys',

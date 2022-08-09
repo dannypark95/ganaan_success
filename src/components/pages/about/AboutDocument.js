@@ -35,8 +35,12 @@ const AboutDocument = () => {
 
               <div className='permitPicture'>
                 <div className='permit'>
-                  <img src={ssp_permit} alt='ssp_permit' className='permit' />
-                  <div className='permitDesc_1 permitDesc'>
+                  <img
+                    src={ssp_permit}
+                    alt='ssp_permit'
+                    className='permit rounded imgShadow'
+                  />
+                  <div className='permitDesc_1 permitDesc '>
                     필리핀 이민국 인증 (SSP)
                   </div>
                 </div>
@@ -44,7 +48,7 @@ const AboutDocument = () => {
                   <img
                     src={tesda_permit}
                     alt='tesda_permit'
-                    className='permit'
+                    className='permit rounded imgShadow'
                   />
                   <div className='permitDesc_2 permitDesc'>
                     필리핀 교육청 인증 (TESDA)

@@ -14,28 +14,60 @@ const Slider = () => {
   return (
     <Carousel fade controls={true} interval={3000} indicators={true}>
       <Carousel.Item>
-        <img className='d-block w-100' src={pic_1} alt='Second slide' />
+        <img
+          className='d-block w-100 rounded imgShadow'
+          src={pic_1}
+          alt='Second slide'
+        />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={pic_2} alt='Third slide' />
+        <img
+          className='d-block w-100 rounded imgShadow'
+          src={pic_2}
+          alt='Third slide'
+        />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={pic_3} alt='Third slide' />
+        <img
+          className='d-block w-100 rounded imgShadow'
+          src={pic_3}
+          alt='Third slide'
+        />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={pic_4} alt='Third slide' />
+        <img
+          className='d-block w-100 rounded imgShadow'
+          src={pic_4}
+          alt='Third slide'
+        />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={pic_5} alt='Third slide' />
+        <img
+          className='d-block w-100 rounded imgShadow'
+          src={pic_5}
+          alt='Third slide'
+        />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={pic_6} alt='Third slide' />
+        <img
+          className='d-block w-100 rounded imgShadow'
+          src={pic_6}
+          alt='Third slide'
+        />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={pic_7} alt='Third slide' />
+        <img
+          className='d-block w-100 rounded imgShadow'
+          src={pic_7}
+          alt='Third slide'
+        />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={pic_8} alt='Third slide' />
+        <img
+          className='d-block w-100 rounded imgShadow'
+          src={pic_8}
+          alt='Third slide'
+        />
       </Carousel.Item>
     </Carousel>
   );

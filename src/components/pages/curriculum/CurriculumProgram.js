@@ -35,7 +35,7 @@ const CurriculumProgram = () => {
             </div>
 
             <div>
-              <div className='programList programGrid'>
+              <div className='programList programGrid text-center'>
                 <div className='program-g1 fs-5 fw-bold'>
                   고품격 영어교육과 학습환경 제공
                   <div className='fs-6 fw-light mt-2 mx-3 text-left'>
@@ -48,25 +48,25 @@ const CurriculumProgram = () => {
                 <img
                   src={program_1}
                   alt='program_pic_1'
-                  className='program-g2 p-4 rounded'
+                  className='program-g2 img-fluid rounded imgShadow w-75 m-5'
                 />
               </div>
-              <div className='programList programGrid'>
+              <div className='programList programGrid text-center'>
                 <img
                   src={program_4}
                   alt='program_pic_4'
-                  className='program-g1 p-4 rounded'
+                  className='program-g1 img-fluid rounded imgShadow w-75 m-3 '
                 />
-                <div className='program-g2 fs-5 fw-bold'>
+                <div className='program-g2 fs-5 fw-bold programHeading'>
                   꼼꼼하고 정확한 평가시스템
-                  <div className='fs-6 fw-light mt-2 mx-3 text-left'>
+                  <div className='fs-6 fw-light mt-2 mx-3 text-left programDisc'>
                     개개인의 학습법, 학습 내용, 학습량, 성적 등을 빈틈없이
                     파악하여, 최적의 난이도 조절을 통해 철저한 개별 관리를
                     합니다.
                   </div>
                 </div>
               </div>
-              <div className='programList programGrid'>
+              <div className='programList programGrid text-center'>
                 <div className='program-g1 fs-5 fw-bold'>
                   영어로 배우는 여러가지 액티비티
                   <div className='fs-6 fw-light mt-2 mx-3 text-left'>
@@ -79,14 +79,14 @@ const CurriculumProgram = () => {
                 <img
                   src={program_2}
                   alt='program_pic_2'
-                  className='program-g2 p-4 rounded'
+                  className='program-g2 img-fluid rounded imgShadow w-75 m-5'
                 />
               </div>
-              <div className='programList programGrid'>
+              <div className='programList programGrid text-center'>
                 <img
                   src={program_5}
                   alt='program_pic_5'
-                  className='program-g1 p-4 rounded'
+                  className='program-g1 img-fluid rounded imgShadow w-75 m-5'
                 />
                 <div className='program-g2 fs-5 fw-bold'>
                   글로벌 인재 양성 캠프
@@ -96,7 +96,7 @@ const CurriculumProgram = () => {
                   </div>
                 </div>
               </div>
-              <div className='programList programGrid'>
+              <div className='programList programGrid text-center'>
                 <div className='program-g1 fs-5 fw-bold'>
                   정식 자격증 갖춘 선생님
                   <div className='fs-6 fw-light mt-2 mx-3 text-left'>
@@ -107,7 +107,7 @@ const CurriculumProgram = () => {
                 <img
                   src={program_3}
                   alt='program_pic_3'
-                  className='program-g2 p-4 rounded'
+                  className='program-g2 img-fluid rounded imgShadow w-75 m-5'
                 />
               </div>
             </div>

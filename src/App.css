@@ -983,6 +983,7 @@ table th {
 .currPriceTable th,
 .currPriceTable td {
   text-align: center;
+  vertical-align: middle;
 }
 
 .rowSpanText {
@@ -1191,6 +1192,18 @@ table th {
 .program_g2 {
   grid-column: 2;
   grid-row: 1;
+}
+
+.currMenuWeek td {
+  font-size: 14px;
+}
+
+.currMenuPic {
+  display: none;
+}
+
+.imgShadow {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 /* Mobile Version */
@@ -1508,8 +1521,30 @@ table th {
   .currGuideSidePicture {
     width: 250px;
   }
+
+  .currMenuWeek th,
+  .currMenuWeek td {
+    font-size: 12px;
+  }
+
+  .programHeading {
+    font-size: 16px !important;
+  }
+
+  .programDisc {
+    font-size: 10px !important;
+  }
 }
 /* 900px above */
+@media (max-width: 811px) {
+  .currMenu {
+    display: none;
+  }
+
+  .currMenuPic {
+    display: block;
+  }
+}
 
 @media (max-width: 582px) {
   .currGuideSidePicture {
