@@ -63,7 +63,7 @@ const WalkinTour = () => {
             <div className='pageTitle'>
               <span className='subTitleNav'>투어신청</span>
             </div>
-            <h4 className='text-left'>온라인 참가신청서</h4>
+            <h4 className='text-left'>온라인 투어신청서</h4>
             <hr />
 
             <div className='currApplyForm text-left'>

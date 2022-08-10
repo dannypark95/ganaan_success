@@ -773,7 +773,8 @@ table th {
   padding: 1rem 5rem;
 }
 
-.introText span {
+.introText span,
+.walkinIntro span {
   font-weight: bolder;
   color: #3a32c3;
 }

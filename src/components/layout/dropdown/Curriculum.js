@@ -19,6 +19,7 @@ const Curriculum = (props) => {
   let schedule = '';
   let location = '';
   let menu = '';
+  let intro = '';
 
   if (props.current) {
     navSide = 'navSide';
@@ -36,10 +37,17 @@ const Curriculum = (props) => {
     location = 'current';
   } else if (props.current === 'menu') {
     menu = 'current';
+  } else if (props.current === 'intro') {
+    intro = 'current';
   }
 
   return (
     <div>
+      <Link to='/curriculum/intro' onClick={onClick}>
+        <div className={`dropdownList dropdownBetween ${navSide} ${intro}`}>
+          캠프소개
+        </div>
+      </Link>
       <Link to='/curriculum/guide' onClick={onClick}>
         <div className={`dropdownList dropdownFirst ${navSide} ${guide}`}>
           모집요강

@@ -30,6 +30,7 @@ import CurriculumMenu from './components/pages/curriculum/CurriculumMenu';
 import CurriculumLocation from './components/pages/curriculum/CurriculumLocation';
 import CurriculumGuide from './components/pages/curriculum/CurriculumGuide';
 import CurriculumApply from './components/pages/curriculum/CurriculumApply';
+import CurriculumIntro from './components/pages/curriculum/CurriculumIntro';
 
 import WalkinTour from './components/pages/walkin/WalkinTour';
 import WalkinPickDrop from './components/pages/walkin/WalkinPickDrop';
@@ -58,6 +59,11 @@ function App() {
             <Route exact path='/about/document' element={<AboutDocument />} />
 
             {/* Curriculum Page */}
+            <Route
+              exact
+              path='/curriculum/intro'
+              element={<CurriculumIntro />}
+            />
             <Route
               exact
               path='/curriculum/guide'
