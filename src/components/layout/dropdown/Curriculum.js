@@ -25,6 +25,17 @@ const Curriculum = (props) => {
     navSide = 'navSide';
   }
 
+  // switch (props.current) {
+  //   case 'guide':
+  //     guide = 'current';
+  //     break;
+  //   case 'apply':
+  //     apply = 'current';
+  //     break;
+  //   case 'program':
+  //     program = ''
+  // }
+
   if (props.current === 'guide') {
     guide = 'current';
   } else if (props.current === 'apply') {

@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <div className='contact-info'>
-      <div> 3rd Floor GCA Bldg, Gov. M. Cuenco Ave, Cebu City </div>
+      <div> 주소 : 3rd Floor GCA Bldg, Gov. M. Cuenco Ave, Cebu City </div>
       <div>
         상담문의 : +63 9267203580 / 홈페이지 : www.cebusuccess.com / 이메일 :
         cebusuccess@gmail.com

@@ -10,7 +10,7 @@ import pic_6 from '../../../../media/ganaan/pic_6.JPG';
 import pic_7 from '../../../../media/ganaan/pic_7.JPG';
 import pic_8 from '../../../../media/ganaan/pic_8.JPG';
 
-const Slider = () => {
+const GanaanSlider = () => {
   return (
     <Carousel fade controls={true} interval={3000} indicators={true}>
       <Carousel.Item>
@@ -73,4 +73,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default GanaanSlider;

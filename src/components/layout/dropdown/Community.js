@@ -17,7 +17,6 @@ const Community = (props) => {
   let items = '';
   let entry = '';
   let policy = '';
-  let refund = '';
   let forum = '';
   let review = '';
 
@@ -33,8 +32,6 @@ const Community = (props) => {
     entry = 'current';
   } else if (props.current === 'policy') {
     policy = 'current';
-  } else if (props.current === 'refund') {
-    refund = 'current';
   } else if (props.current === 'forum') {
     forum = 'current';
   } else if (props.current === 'review') {
@@ -62,12 +59,7 @@ const Community = (props) => {
       </Link>
       <Link to='/community/policy' onClick={onClick}>
         <div className={`dropdownList dropdownBetween ${navSide} ${policy}`}>
-          어학원규정
-        </div>
-      </Link>
-      <Link to='/community/refund' onClick={onClick}>
-        <div className={`dropdownList dropdownBetween ${navSide} ${refund}`}>
-          환불규정
+          학원규정
         </div>
       </Link>
       <Link to='/community/forum' onClick={onClick}>

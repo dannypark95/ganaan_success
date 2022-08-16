@@ -1207,6 +1207,14 @@ table th {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+.abroadProgramText span {
+  font-weight: 600;
+}
+
+.schoolCarousel {
+  text-align: center;
+}
+
 /* Mobile Version */
 @media (max-width: 1710px) {
   .navTitle {

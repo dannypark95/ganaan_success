@@ -13,13 +13,12 @@ import AboutLocation from './components/pages/about/AboutLocation';
 
 import AbroadSchedule from './components/pages/abroad/AbroadSchedule';
 import AbroadProgram from './components/pages/abroad/AbroadProgram';
-import AbroadIntro from './components/pages/abroad/AbroadIntro';
+import AbroadSchool from './components/pages/abroad/AbroadSchool';
 import AbroadProcedure from './components/pages/abroad/AbroadProcedure';
 
 import CommunityAnnouncement from './components/pages/community/CommunityAnnouncement';
 import CommunityReview from './components/pages/community/CommunityReview';
 import CommunityEntry from './components/pages/community/CommunityEntry';
-import CommunityRefund from './components/pages/community/CommunityRefund';
 import CommunityForum from './components/pages/community/CommunityForum';
 import CommunityPolicy from './components/pages/community/CommunityPolicy';
 import CommunityItems from './components/pages/community/CommunityItems';
@@ -103,7 +102,7 @@ function App() {
             />
 
             {/* Abroad Page */}
-            <Route exact path='/abroad/intro' element={<AbroadIntro />} />
+            <Route exact path='/abroad/school' element={<AbroadSchool />} />
             <Route
               exact
               path='/abroad/procedure'
@@ -125,11 +124,6 @@ function App() {
               exact
               path='/community/policy'
               element={<CommunityPolicy />}
-            />
-            <Route
-              exact
-              path='/community/refund'
-              element={<CommunityRefund />}
             />
             <Route
               exact

@@ -18,28 +18,30 @@ const AbroadProgram = () => {
             <div className='pageTitle'>
               <span className='subTitleNav'>국제학교 입학 프로그램</span>
             </div>
-            <div className='text-left ms-4'>
+            <div className='text-left ms-4 abroadProgramText'>
               <div className='fs-3 mb-4'>
                 Cebu Internatioanl School Program
-                <div className='fs-6 ms-4 mb-3'>
-                  학비 : $2,000 ~ $20,000 (1 Year)
-                  <br /> 홈스테이 비용 : $25,000 (1 Year) / $2,200 (1 Month)
+                <div className='fs-6 ms-4 mb-3 mt-2'>
+                  <span>학비</span> : $2,000 ~ $20,000 (1 Year)
+                  <br /> <span>홈스테이 비용</span> : $25,000 (1 Year) / $2,200
+                  (1 Month)
                 </div>
                 <div className='fs-6 ms-4'>
-                  포함 내역: 숙소 및 식사비용, 학교 픽업-드랍, 비자연장비,
-                  방과후 수업 3타임, 가디언 비용, 세탁 및 청소비용
+                  <span>포함 내역</span>: 숙소 및 식사비용, 학교 픽업-드랍,
+                  비자연장비, 방과후 수업 3타임, 가디언 비용, 세탁 및 청소비용
                 </div>
               </div>
               <div className='fs-3'>
                 장기 유학 프로그램
-                <div className='fs-6 ms-4 mb-3'>비용 : $3,000 (1 Month)</div>
+                <div className='fs-6 ms-4 mb-3 mt-2'>
+                  <span>비용 </span>: $3,000 (1 Month)
+                </div>
                 <div className='fs-6 ms-4'>
-                  포함 내역: 학원 수업료, 숙소 및 식사비용, 학원 픽업-드랍,
-                  비자연장비, I-CARD 비용, SSP발급비, 가디언 비용, 세탁 및
-                  청소비용, 주말 엑티비티 비용 (월 2회), 교재비
+                  <span>포함 내역</span>: 학원 수업료, 숙소 및 식사비용, 학원
+                  픽업-드랍, 비자연장비, I-CARD 비용, SSP발급비, 가디언 비용,
+                  세탁 및 청소비용, 주말 엑티비티 비용 (월 2회), 교재비
                   <br />
-                  <br />
-                  비포함 내역: 항공권, 여행자보험, 용돈, 출국세
+                  <span>비포함 내역</span>: 항공권, 여행자보험, 용돈, 출국세
                 </div>
               </div>
             </div>

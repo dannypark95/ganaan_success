@@ -13,7 +13,7 @@ const Abroad = (props) => {
   };
 
   let navSide = '';
-  let intro = '';
+  let school = '';
   let program = '';
   let schedule = '';
   let procedure = '';
@@ -22,8 +22,8 @@ const Abroad = (props) => {
     navSide = 'navSide';
   }
 
-  if (props.current === 'intro') {
-    intro = 'current';
+  if (props.current === 'school') {
+    school = 'current';
   } else if (props.current === 'program') {
     program = 'current';
   } else if (props.current === 'schedule') {
@@ -39,8 +39,8 @@ const Abroad = (props) => {
           국제학교 입학 프로그램
         </div>
       </Link>
-      <Link to='/abroad/intro' onClick={onClick}>
-        <div className={`dropdownList dropdownBetween ${navSide} ${intro}`}>
+      <Link to='/abroad/school' onClick={onClick}>
+        <div className={`dropdownList dropdownBetween ${navSide} ${school}`}>
           학교소개
         </div>
       </Link>

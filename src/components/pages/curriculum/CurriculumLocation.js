@@ -6,7 +6,7 @@ import Curriculum from '../../layout/dropdown/Curriculum';
 import ssp_permit from '../../../media/ssp_permit.jpeg';
 import tesda_permit from '../../../media/tesda_permit.jpeg';
 
-import Slider from './comp/Slider';
+import GanaanSlider from './comp/GanaanSlider';
 
 const CurriculumLocation = () => {
   return (
@@ -44,7 +44,7 @@ const CurriculumLocation = () => {
                   </div>
                 </div>
                 <div className='curr-g2'>
-                  <Slider />
+                  <GanaanSlider />
                 </div>
               </div>
 

@@ -58,6 +58,7 @@ const CurriculumProgram = () => {
                   </div>
                 </div>
               </div>
+              <hr />
               <div className='fs-4'>
                 그룹 수업 : SPEAKING / DEBATE / SPEECH / 청강수업
                 <div className='fs-6 mb-3'>
