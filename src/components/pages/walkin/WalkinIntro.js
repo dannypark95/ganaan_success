@@ -3,6 +3,8 @@ import React from 'react';
 import Header from '../../layout/Header';
 import Walkin from '../../layout/dropdown/Walkin';
 
+import SuccessSlider from './comp/SuccessSlider';
+
 const WalkinIntro = () => {
   return (
     <div>
@@ -18,6 +20,9 @@ const WalkinIntro = () => {
             <div className='pageTitle'>
               <span className='subTitleNav'>학원안내</span>
             </div>
+
+            <SuccessSlider />
+
             <div className='walkinIntro text-left m-5'>
               세부 SUCCESS 어학원은 동남아 3대 휴양지의 하나인 필리핀 세부에
               위치한 곳으로, 2003년 5월 한국 브릿지 어학원에서 현지에 직접

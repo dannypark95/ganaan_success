@@ -16,11 +16,15 @@ const CommunityPolicy = () => {
           </div>
           <div className='page-g2'>
             <div className='pageTitle'>
-              <span className='subTitleNav'>학원규정</span>
+              <span className='subTitleNav '>학원규정</span>
             </div>
             <div className='text-left p-3'>
               <div>
-                <div className='fs-4 fw-bold mb-2'>캠프 규정 및 환불 조치</div>
+                <div className='fs-4 fw-bold mb-2'>
+                  <p>
+                    <u>캠프 규정 및 환불 조치</u>
+                  </p>
+                </div>
                 <div className='mb-3'>
                   SUCCESS 어학원 (이하 '당사' 라 한다) 과 영어 캠프 참가
                   학생간에 관하여 적용되는 기본적 사항을 정하기 위하여 다음과
@@ -29,8 +33,8 @@ const CommunityPolicy = () => {
                 </div>
               </div>
               <div>
-                <div className='fs-5'>
-                  {'<'} 참가자 준수사항 {'>'}
+                <div className='policyTitle'>
+                  {'<'}참가자 준수사항{'>'}
                 </div>
                 <ul>
                   <li>
@@ -54,8 +58,8 @@ const CommunityPolicy = () => {
                 </ul>
               </div>
               <div>
-                <div className='fs-5'>
-                  {'<'} 예약금 납입 및 캠프 비용 납입 {'>'}
+                <div className='policyTitle'>
+                  {'<'}예약금 납입 및 캠프 비용 납입{'>'}
                 </div>
                 <ul>
                   <li>
@@ -66,8 +70,8 @@ const CommunityPolicy = () => {
                 </ul>
               </div>
               <div>
-                <div className='fs-5'>
-                  {'<'} 환불규정 {'>'}
+                <div className='policyTitle'>
+                  {'<'}환불규정{'>'}
                 </div>
                 <ul>
                   <li>
@@ -93,8 +97,8 @@ const CommunityPolicy = () => {
                 </ul>
               </div>
               <div>
-                <div className='fs-5'>
-                  {'<'} 환불불가 {'>'}
+                <div className='policyTitle'>
+                  {'<'}환불불가{'>'}
                 </div>
                 <ul>
                   <li>
@@ -114,8 +118,8 @@ const CommunityPolicy = () => {
                 </ul>
               </div>
               <div>
-                <div className='fs-5'>
-                  {'<'} 기타사항 {'>'}
+                <div className='policyTitle'>
+                  {'<'}기타사항{'>'}
                 </div>
                 <ul>
                   <li>

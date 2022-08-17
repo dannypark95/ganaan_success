@@ -1,10 +1,40 @@
 import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+
+import pic_1 from '../../../../media/schools/mmis_1.png';
+import pic_2 from '../../../../media/schools/mmis_2.png';
+import pic_3 from '../../../../media/schools/mmis_3.png';
 
 const MMISSlider = () => {
   return (
     <div>
-      <div className='fs-3 mb-3'>
+      <div className='fs-3 mb-3 schoolTitle'>
         MMIS (Maria Montessori International School)
+      </div>
+      <div className='w-50 mb-3 schoolCarousel'>
+        <Carousel fade controls={true} interval={3000} indicators={true}>
+          <Carousel.Item>
+            <img
+              className='d-block w-100 rounded imgShadow'
+              src={pic_1}
+              alt='Second slide'
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className='d-block w-100 rounded imgShadow'
+              src={pic_2}
+              alt='Third slide'
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className='d-block w-100 rounded imgShadow'
+              src={pic_3}
+              alt='Third slide'
+            />
+          </Carousel.Item>
+        </Carousel>
       </div>
       <div className='mb-3'>
         1984년 설립된 MMIS는 몬테소리 교육법을 기본으로 운영하는 학교이며 규모는

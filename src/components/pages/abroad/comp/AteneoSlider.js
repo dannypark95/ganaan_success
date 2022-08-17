@@ -1,14 +1,14 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-import pic_1 from '../../../../media/ganaan/pic_1.JPG';
-import pic_2 from '../../../../media/ganaan/pic_2.JPG';
-import pic_3 from '../../../../media/ganaan/pic_3.JPG';
+import pic_1 from '../../../../media/schools/ateneo_1.png';
+import pic_2 from '../../../../media/schools/ateneo_2.jpeg';
+import pic_3 from '../../../../media/schools/ateneo_3.png';
 
 const AteneoSlider = () => {
   return (
     <div>
-      <div className='fs-3 mb-3'>Ateneo De Cebu</div>
+      <div className='fs-3 mb-3 schoolTitle'>Ateneo De Cebu</div>
       <div className='w-50 mb-3 schoolCarousel'>
         <Carousel fade controls={true} interval={3000} indicators={true}>
           <Carousel.Item>
@@ -47,8 +47,8 @@ const AteneoSlider = () => {
       </div>
 
       <div>
-        <a href='http://www.example.com' target='_blank' rel=' noreferrer'>
-          www.example.com
+        <a href='http://www.shs-adc.edu.ph/' target='_blank' rel=' noreferrer'>
+          http://www.shs-adc.edu.ph/
         </a>
       </div>
     </div>
