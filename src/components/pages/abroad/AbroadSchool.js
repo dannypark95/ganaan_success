@@ -14,6 +14,40 @@ import WoodridgeSlider from './comp/WoodridgeSlider';
 const AbroadSchool = () => {
   const [school, setSchool] = useState('cis');
 
+  let cis = '';
+  let cie = '';
+  let bright = '';
+  let ssc = '';
+  let ateneo = '';
+  let mmis = '';
+  let woodridge = '';
+
+  switch (school) {
+    case 'cis':
+      cis = 'currentBtn';
+      break;
+    case 'cie':
+      cie = 'currentBtn';
+      break;
+    case 'bright':
+      bright = 'currentBtn';
+      break;
+    case 'ssc':
+      ssc = 'currentBtn';
+      break;
+    case 'ateneo':
+      ateneo = 'currentBtn';
+      break;
+    case 'mmis':
+      mmis = 'currentBtn';
+      break;
+    case 'woodridge':
+      woodridge = 'currentBtn';
+      break;
+    default:
+      break;
+  }
+
   return (
     <div>
       <Header text={'관리형 조기유학'} sub={'학교소개'} />
@@ -29,63 +63,63 @@ const AbroadSchool = () => {
               <span className='subTitleNav'>학교소개</span>
             </div>
             <div className='text-left'>
-              <div className='mb-3'>
-                <div
-                  className='btn'
+              <div className='mb-3 d-flex flex-wrap text-center justify-content-center'>
+                <button
+                  className={`schoolBtn btn btn-secondary ${cis}`}
                   onClick={() => {
                     setSchool('cis');
                   }}
                 >
-                  CIS (Cebu International School)
-                </div>
-                <div
-                  className='btn'
+                  CIS
+                </button>
+                <button
+                  className={`schoolBtn btn btn-secondary ${cie}`}
                   onClick={() => {
                     setSchool('cie');
                   }}
                 >
-                  CIE (Centre for International Education)
-                </div>
-                <div
-                  className='btn'
+                  CIE
+                </button>
+                <button
+                  className={`schoolBtn btn btn-secondary ${bright}`}
                   onClick={() => {
                     setSchool('bright');
                   }}
                 >
                   BRIGHT ACADEMY
-                </div>
-                <div
-                  className='btn'
+                </button>
+                <button
+                  className={`schoolBtn btn btn-secondary ${ssc}`}
                   onClick={() => {
                     setSchool('ssc');
                   }}
                 >
-                  SSC (Singapore School Cebu)
-                </div>
-                <div
-                  className='btn'
+                  SSC
+                </button>
+                <button
+                  className={`schoolBtn btn btn-secondary ${ateneo}`}
                   onClick={() => {
                     setSchool('ateneo');
                   }}
                 >
-                  Ateneo De Cebu
-                </div>
-                <div
-                  className='btn'
+                  Ateneo
+                </button>
+                <button
+                  className={`schoolBtn btn btn-secondary ${mmis}`}
                   onClick={() => {
                     setSchool('mmis');
                   }}
                 >
-                  MMIS (Maria Montessori International School)
-                </div>
-                <div
-                  className='btn'
+                  MMIS
+                </button>
+                <button
+                  className={`schoolBtn btn btn-secondary ${woodridge}`}
                   onClick={() => {
                     setSchool('woodridge');
                   }}
                 >
-                  Woodrige International School
-                </div>
+                  Woodrige
+                </button>
               </div>
 
               {school === 'cis' && <CISSlider />}

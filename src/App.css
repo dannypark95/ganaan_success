@@ -644,6 +644,11 @@ table th {
   filter: brightness(40%);
 }
 
+.dimPic {
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+}
+
 .headerText {
   position: absolute;
   top: 50%;
@@ -1215,7 +1220,8 @@ table th {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.abroadProgramText span {
+.abroadProgramText span,
+.abroadT {
   font-weight: 600;
 }
 
@@ -1248,6 +1254,20 @@ table th {
 
 .sliderSize {
   width: 50%;
+}
+
+.schoolBtn {
+  background-color: rgb(47, 47, 47) !important;
+  border-color: rgb(47, 47, 47) !important;
+  /* padding: 0.25rem 1.5rem !important; */
+  margin-bottom: 0.5rem;
+  border-radius: 0px !important;
+  width: 180px;
+}
+
+.currentBtn {
+  background-color: #5c636a !important;
+  border-color: #5c636a !important;
 }
 
 /* Mobile Version */
@@ -1555,7 +1575,7 @@ table th {
 
   .curr-g2 {
     width: 70vw;
-    margin-left: 6vw;
+    margin: auto;
   }
 
   .currGrid {
