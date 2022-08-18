@@ -1245,6 +1245,11 @@ table th {
   font-family: 'ChosunCentennial';
   font-weight: 600;
 }
+
+.sliderSize {
+  width: 50%;
+}
+
 /* Mobile Version */
 @media (max-width: 1710px) {
   .navTitle {
@@ -1572,6 +1577,10 @@ table th {
 
   .programDisc {
     font-size: 10px !important;
+  }
+
+  .sliderSize {
+    width: 70%;
   }
 }
 /* 900px above */

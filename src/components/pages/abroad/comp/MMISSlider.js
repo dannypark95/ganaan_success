@@ -11,7 +11,7 @@ const MMISSlider = () => {
       <div className='fs-3 mb-3 schoolTitle'>
         MMIS (Maria Montessori International School)
       </div>
-      <div className='w-50 mb-3 schoolCarousel'>
+      <div className='sliderSize mb-3 schoolCarousel'>
         <Carousel fade controls={true} interval={3000} indicators={true}>
           <Carousel.Item>
             <img
@@ -43,6 +43,12 @@ const MMISSlider = () => {
         과학을 기본으로 합니다. 한 반 정원은 약 30명 정도이며, 가성비가 좋은
         학교중의 하나입니다. 수업료가 다른 사립학교에 비해 저렴하고 높은 수업의
         질을 장점으로 뽑을 수 있습니다. 연간 학비는 USD 1,800 ~3,500입니다
+      </div>
+
+      <div>
+        <a href='https://www.mmis.edu.ph/' target='_blank' rel=' noreferrer'>
+          https://www.mmis.edu.ph/
+        </a>
       </div>
     </div>
   );

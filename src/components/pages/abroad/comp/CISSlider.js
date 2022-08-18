@@ -11,7 +11,7 @@ const CISSlider = () => {
       <div className='fs-3 mb-3 schoolTitle '>
         CIS (Cebu International School)
       </div>
-      <div className='w-50 mb-3 schoolCarousel'>
+      <div className='sliderSize mb-3 schoolCarousel'>
         <Carousel fade controls={true} interval={3000} indicators={true}>
           <Carousel.Item>
             <img

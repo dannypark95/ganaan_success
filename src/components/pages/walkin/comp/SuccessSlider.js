@@ -11,7 +11,7 @@ import pic_7 from '../../../../media/success/slider/info_7.png';
 
 const SuccessSlider = () => {
   return (
-    <div className='w-50 m-auto'>
+    <div className='sliderSize m-auto'>
       <Carousel fade controls={true} interval={3000} indicators={true}>
         <Carousel.Item>
           <img
