@@ -374,6 +374,19 @@ img {
   color: #888;
 }
 
+.alertInformation {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+  margin: auto;
+  width: 200px;
+  font-size: 12px;
+  padding: 0.3rem 0.3rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: opacity 0.15s linear;
+}
+
 /* input[type='text'],
 input[type='email'],
 input[type='password'],

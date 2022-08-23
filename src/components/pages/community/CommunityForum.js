@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import Header from '../../layout/Header';
 import Community from '../../layout/dropdown/Community';
@@ -14,38 +14,53 @@ import Col from 'react-bootstrap/Col';
 const CommunityForum = () => {
   const [formCheck, setFormCheck] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
+  const [values, setValues] = useState({
+    contactName: '',
+    contactEmail: '',
+    contactKakao: '',
+    contactType: '',
+    contactText: '',
+    contactPref: '',
+  });
 
   let navigate = useNavigate();
 
+  const form = useRef();
+
   const onCheck = () => {
-    if (formCheck) {
-      setFormCheck(false);
-    } else {
-      setFormCheck(true);
-    }
+    setFormCheck(!formCheck);
+  };
+
+  const handleChange = (e) => {
+    setValues((values) => ({
+      ...values,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    if (!formCheck) {
-      console.log('Please check the box!');
+    if (
+      values.contactName === '' ||
+      values.contactEmail === '' ||
+      values.contactKakao === '' ||
+      values.contactType === '' ||
+      values.contactText === '' ||
+      values.contactPref === '' ||
+      !formCheck
+    ) {
       setShowAlert(true);
       setTimeout(() => {
         setShowAlert(false);
       }, 3000);
     } else {
-      console.log('Email Sent');
-
-      const formHTML = e.target;
-
       const contactEmail = emailjs.sendForm(
         'service_led28bd',
         'template_t2szo8j',
-        formHTML,
+        form.current,
         'IXEyL3xjCMoc12wcW'
       );
-
       await Promise.all([contactEmail]);
 
       let path = '/';
@@ -75,23 +90,35 @@ const CommunityForum = () => {
                 신청해 주세요. */}
               </div>
               <div>
-                <Form onSubmit={sendEmail}>
+                <Form ref={form} onSubmit={sendEmail}>
                   <Row className='mb-3 text-left'>
                     <Form.Group as={Col} controlId='typeValidation'>
                       <Form.Label>문의유형</Form.Label>
-                      <Form.Select aria-label='Default select example'>
-                        <Form.Control type='class' name='contactType' />
-                        <option disabled>선택</option>
-                        <option value='camp'>영어캠프</option>
-                        <option value='walkin'>Walk-In</option>
-                        <option value='abroad'>관리형 조기유학</option>
-                        <option value='misc'>기타</option>
+                      <Form.Select
+                        aria-label='Default select example'
+                        name='contactType'
+                        onChange={handleChange}
+                        defaultValue='선택해주세요'
+                      >
+                        <Form.Control type='class' />
+                        <option value='선택해주세요' disabled>
+                          선택해주세요
+                        </option>
+                        <option value='영어캠프'>영어캠프</option>
+                        <option value='Walk-In'>Walk-In</option>
+                        <option value='관리형 조기유학'>관리형 조기유학</option>
+                        <option value='기타'>기타</option>
                       </Form.Select>
                     </Form.Group>
 
                     <Form.Group as={Col} controlId='nameValidation'>
                       <Form.Label>이름</Form.Label>
-                      <Form.Control type='name' name='contactName' />
+                      <Form.Control
+                        type='name'
+                        name='contactName'
+                        onChange={handleChange}
+                        value={values.contactName}
+                      />
                     </Form.Group>
                   </Row>
                   <Row className='text-left mb-3'>
@@ -101,11 +128,18 @@ const CommunityForum = () => {
                         type='email'
                         placeholder='name@example.com'
                         name='contactEmail'
+                        value={values.contactEmail}
+                        onChange={handleChange}
                       />
                     </Form.Group>
                     <Form.Group as={Col} controlId='kakaoValidation'>
                       <Form.Label>카카오톡</Form.Label>
-                      <Form.Control type='text' name='contactKakao' />
+                      <Form.Control
+                        type='text'
+                        name='contactKakao'
+                        value={values.contactKakao}
+                        onChange={handleChange}
+                      />
                     </Form.Group>
 
                     <Form.Group controlId='prefValidation' as={Col}>
@@ -115,15 +149,19 @@ const CommunityForum = () => {
                           inline
                           label='이메일'
                           name='contactPref'
+                          value='이메일'
                           type='radio'
                           id={`contact-checkbox-1`}
+                          onChange={handleChange}
                         />
                         <Form.Check
                           inline
                           label='카카오톡'
                           name='contactPref'
                           type='radio'
+                          value='카카오톡'
                           id={`contact-checkbox-1`}
+                          onChange={handleChange}
                         />
                       </div>
                     </Form.Group>
@@ -131,14 +169,15 @@ const CommunityForum = () => {
 
                   <Form.Group
                     className='mb-3 text-left'
-                    controlId='contactText'
+                    controlId='textValidation '
                   >
                     <Form.Label>문의내용</Form.Label>
                     <Form.Control
                       name='contactText'
                       as='textarea'
                       rows={4}
-                      required
+                      value={values.contactText}
+                      onChange={handleChange}
                     />
                   </Form.Group>
 
@@ -147,7 +186,7 @@ const CommunityForum = () => {
                       <Form.Check
                         type='checkbox'
                         id='order-checkbox'
-                        label='기제하신 정보를 확인하시고 책크해주세요.'
+                        label='정보를 확인하시고 책크해주세요.'
                         onChange={() => {
                           return onCheck();
                         }}
@@ -156,8 +195,8 @@ const CommunityForum = () => {
                   </Form.Group>
 
                   {showAlert && (
-                    <div className='alertInformation'>
-                      Please check the agreement
+                    <div className='alertInformation text-center mb-3'>
+                      모든정보를 입력해주세요.
                     </div>
                   )}
 
