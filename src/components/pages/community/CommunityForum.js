@@ -2,8 +2,8 @@ import React, { useRef, useState } from 'react';
 
 import Header from '../../layout/Header';
 import Community from '../../layout/dropdown/Community';
+import SubmitConfirmation from '../../layout/comp/SubmitConfirmation';
 
-import { useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import emailjs from 'emailjs-com';
@@ -12,6 +12,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const CommunityForum = () => {
+  const [submitCheck, setSubmitCheck] = useState(false);
   const [formCheck, setFormCheck] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [values, setValues] = useState({
@@ -22,8 +23,6 @@ const CommunityForum = () => {
     contactText: '',
     contactPref: '',
   });
-
-  let navigate = useNavigate();
 
   const form = useRef();
 
@@ -62,11 +61,7 @@ const CommunityForum = () => {
         'IXEyL3xjCMoc12wcW'
       );
       await Promise.all([contactEmail]);
-
-      let path = '/';
-      navigate(path);
-
-      alert('상담요청이 완료되었습니다. 이메일을 확인해주세요.');
+      setSubmitCheck(true);
     }
   };
 
@@ -84,134 +79,135 @@ const CommunityForum = () => {
             <div className='pageTitle'>
               <span className='subTitleNav'>상담요청</span>
             </div>
-            <div>
-              <div className='text-left mb-3'>
-                {/* 더 빠른 답변을 원하신다면, 카카오톡 아이콘을 클릭하여 대화를
-                신청해 주세요. */}
-              </div>
+            {submitCheck && <SubmitConfirmation />}
+
+            {!submitCheck && (
               <div>
-                <Form ref={form} onSubmit={sendEmail}>
-                  <Row className='mb-3 text-left'>
-                    <Form.Group as={Col} controlId='typeValidation'>
-                      <Form.Label>문의유형</Form.Label>
-                      <Form.Select
-                        aria-label='Default select example'
-                        name='contactType'
-                        onChange={handleChange}
-                        defaultValue='선택해주세요'
-                      >
-                        <Form.Control type='class' />
-                        <option value='선택해주세요' disabled>
-                          선택해주세요
-                        </option>
-                        <option value='영어캠프'>영어캠프</option>
-                        <option value='Walk-In'>Walk-In</option>
-                        <option value='관리형 조기유학'>관리형 조기유학</option>
-                        <option value='기타'>기타</option>
-                      </Form.Select>
-                    </Form.Group>
+                <div className='text-left mb-3'></div>
+                <div>
+                  <Form ref={form} onSubmit={sendEmail}>
+                    <Row className='mb-3 text-left'>
+                      <Form.Group as={Col} controlId='typeValidation'>
+                        <Form.Label>문의유형</Form.Label>
+                        <Form.Select
+                          aria-label='Default select example'
+                          name='contactType'
+                          onChange={handleChange}
+                          defaultValue='선택해주세요'
+                        >
+                          <Form.Control type='class' />
+                          <option value='선택해주세요' disabled>
+                            선택해주세요
+                          </option>
+                          <option value='영어캠프'>영어캠프</option>
+                          <option value='Walk-In'>Walk-In</option>
+                          <option value='관리형 조기유학'>
+                            관리형 조기유학
+                          </option>
+                          <option value='기타'>기타</option>
+                        </Form.Select>
+                      </Form.Group>
 
-                    <Form.Group as={Col} controlId='nameValidation'>
-                      <Form.Label>이름</Form.Label>
-                      <Form.Control
-                        type='name'
-                        name='contactName'
-                        onChange={handleChange}
-                        value={values.contactName}
-                      />
-                    </Form.Group>
-                  </Row>
-                  <Row className='text-left mb-3'>
-                    <Form.Group as={Col} controlId='emailValidation'>
-                      <Form.Label>이메일</Form.Label>
-                      <Form.Control
-                        type='email'
-                        placeholder='name@example.com'
-                        name='contactEmail'
-                        value={values.contactEmail}
-                        onChange={handleChange}
-                      />
-                    </Form.Group>
-                    <Form.Group as={Col} controlId='kakaoValidation'>
-                      <Form.Label>카카오톡</Form.Label>
-                      <Form.Control
-                        type='text'
-                        name='contactKakao'
-                        value={values.contactKakao}
-                        onChange={handleChange}
-                      />
-                    </Form.Group>
-
-                    <Form.Group controlId='prefValidation' as={Col}>
-                      <Form.Label>문의선호</Form.Label>
-                      <div key={`contact-checkbox`}>
-                        <Form.Check
-                          inline
-                          label='이메일'
-                          name='contactPref'
-                          value='이메일'
-                          type='radio'
-                          id={`contact-checkbox-1`}
+                      <Form.Group as={Col} controlId='nameValidation'>
+                        <Form.Label>이름</Form.Label>
+                        <Form.Control
+                          type='name'
+                          name='contactName'
+                          onChange={handleChange}
+                          value={values.contactName}
+                        />
+                      </Form.Group>
+                    </Row>
+                    <Row className='text-left mb-3'>
+                      <Form.Group as={Col} controlId='emailValidation'>
+                        <Form.Label>이메일</Form.Label>
+                        <Form.Control
+                          type='email'
+                          placeholder='name@example.com'
+                          name='contactEmail'
+                          value={values.contactEmail}
                           onChange={handleChange}
                         />
-                        <Form.Check
-                          inline
-                          label='카카오톡'
-                          name='contactPref'
-                          type='radio'
-                          value='카카오톡'
-                          id={`contact-checkbox-1`}
+                      </Form.Group>
+                      <Form.Group as={Col} controlId='kakaoValidation'>
+                        <Form.Label>카카오톡</Form.Label>
+                        <Form.Control
+                          type='text'
+                          name='contactKakao'
+                          value={values.contactKakao}
                           onChange={handleChange}
+                        />
+                      </Form.Group>
+
+                      <Form.Group controlId='prefValidation' as={Col}>
+                        <Form.Label>문의선호</Form.Label>
+                        <div key={`contact-checkbox`}>
+                          <Form.Check
+                            inline
+                            label='이메일'
+                            name='contactPref'
+                            value='이메일'
+                            type='radio'
+                            id={`contact-checkbox-1`}
+                            onChange={handleChange}
+                          />
+                          <Form.Check
+                            inline
+                            label='카카오톡'
+                            name='contactPref'
+                            type='radio'
+                            value='카카오톡'
+                            id={`contact-checkbox-1`}
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </Form.Group>
+                    </Row>
+
+                    <Form.Group
+                      className='mb-3 text-left'
+                      controlId='textValidation '
+                    >
+                      <Form.Label>문의내용</Form.Label>
+                      <Form.Control
+                        name='contactText'
+                        as='textarea'
+                        rows={4}
+                        value={values.contactText}
+                        onChange={handleChange}
+                      />
+                    </Form.Group>
+
+                    <Form.Group>
+                      <div key='form-checkBox' className='mb-3 text-left'>
+                        <Form.Check
+                          type='checkbox'
+                          id='order-checkbox'
+                          label='정보를 확인하시고 책크해주세요.'
+                          onChange={onCheck}
                         />
                       </div>
                     </Form.Group>
-                  </Row>
 
-                  <Form.Group
-                    className='mb-3 text-left'
-                    controlId='textValidation '
-                  >
-                    <Form.Label>문의내용</Form.Label>
-                    <Form.Control
-                      name='contactText'
-                      as='textarea'
-                      rows={4}
-                      value={values.contactText}
-                      onChange={handleChange}
-                    />
-                  </Form.Group>
+                    {showAlert && (
+                      <div className='alertInformation text-center mb-3'>
+                        모든정보를 입력해주세요.
+                      </div>
+                    )}
 
-                  <Form.Group>
-                    <div key='form-checkBox' className='mb-3 text-left'>
-                      <Form.Check
-                        type='checkbox'
-                        id='order-checkbox'
-                        label='정보를 확인하시고 책크해주세요.'
-                        onChange={() => {
-                          return onCheck();
-                        }}
-                      />
+                    <div className='text-center'>
+                      <Button
+                        variant='primary'
+                        type='submit'
+                        className='applyButton'
+                      >
+                        상담신청
+                      </Button>
                     </div>
-                  </Form.Group>
-
-                  {showAlert && (
-                    <div className='alertInformation text-center mb-3'>
-                      모든정보를 입력해주세요.
-                    </div>
-                  )}
-
-                  <div className='text-center'>
-                    <Button
-                      variant='primary'
-                      type='submit'
-                      className='applyButton'
-                    >
-                      상담신청
-                    </Button>
-                  </div>
-                </Form>
+                  </Form>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>
