@@ -11,17 +11,18 @@ import AboutDocument from './components/pages/about/AboutDocument';
 import AboutHistory from './components/pages/about/AboutHistory';
 import AboutLocation from './components/pages/about/AboutLocation';
 
-import AbroadSchedule from './components/pages/abroad/AbroadSchedule';
+// import AbroadSchedule from './components/pages/abroad/AbroadSchedule';
 import AbroadProgram from './components/pages/abroad/AbroadProgram';
 import AbroadSchool from './components/pages/abroad/AbroadSchool';
-import AbroadProcedure from './components/pages/abroad/AbroadProcedure';
+// import AbroadProcedure from './components/pages/abroad/AbroadProcedure';
 
 import CommunityAnnouncement from './components/pages/community/CommunityAnnouncement';
 import CommunityReview from './components/pages/community/CommunityReview';
 import CommunityEntry from './components/pages/community/CommunityEntry';
 import CommunityForum from './components/pages/community/CommunityForum';
 import CommunityPolicy from './components/pages/community/CommunityPolicy';
-import CommunityItems from './components/pages/community/CommunityItems';
+import CommunityGallery from './components/pages/community/CommunityGallery';
+// import CommunityItems from './components/pages/community/CommunityItems';
 
 import CurriculumSchedule from './components/pages/curriculum/CurriculumSchedule';
 import CurriculumProgram from './components/pages/curriculum/CurriculumProgram';
@@ -50,13 +51,11 @@ function App() {
           <Routes>
             {/* Home Page */}
             <Route exact path='/' element={<Home />} />
-
             {/* About Page */}
             <Route exact path='/about/intro' element={<AboutIntro />} />
             <Route exact path='/about/history' element={<AboutHistory />} />
             <Route exact path='/about/location' element={<AboutLocation />} />
             <Route exact path='/about/document' element={<AboutDocument />} />
-
             {/* Curriculum Page */}
             <Route
               exact
@@ -89,7 +88,6 @@ function App() {
               element={<CurriculumSchedule />}
             />
             <Route exact path='/curriculum/menu' element={<CurriculumMenu />} />
-
             {/* Walk-in Page */}
             <Route exact path='/walkin/apply' element={<WalkinApply />} />
             <Route exact path='/walkin/intro' element={<WalkinIntro />} />
@@ -100,17 +98,19 @@ function App() {
               path='/walkin/afterschool'
               element={<WalkinAfterschool />}
             />
-
             {/* Abroad Page */}
             <Route exact path='/abroad/school' element={<AbroadSchool />} />
-            <Route
+            {/* <Route
               exact
               path='/abroad/procedure'
               element={<AbroadProcedure />}
-            />
+            /> */}
             <Route exact path='/abroad/program' element={<AbroadProgram />} />
-            <Route exact path='/abroad/schedule' element={<AbroadSchedule />} />
-
+            {/* <Route
+              exact
+              path='/abroad/schedule'
+              element={<AbroadSchedule />}
+            />{' '} */}
             {/* Community Page */}
             <Route
               exact
@@ -119,7 +119,12 @@ function App() {
             />
             <Route exact path='/community/entry' element={<CommunityEntry />} />
             <Route exact path='/community/forum' element={<CommunityForum />} />
-            <Route exact path='/community/items' element={<CommunityItems />} />
+            {/* <Route exact path='/community/items' element={<CommunityItems />} /> */}
+            <Route
+              exact
+              path='/community/gallery'
+              element={<CommunityGallery />}
+            />
             <Route
               exact
               path='/community/policy'

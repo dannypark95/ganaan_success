@@ -364,9 +364,9 @@ img {
 }
 
 /* Forms */
-input {
+/* input {
   margin: 1.2rem 0;
-}
+} */
 
 .form-text {
   display: block;
@@ -374,7 +374,7 @@ input {
   color: #888;
 }
 
-input[type='text'],
+/* input[type='text'],
 input[type='email'],
 input[type='password'],
 input[type='date'],
@@ -390,7 +390,7 @@ textarea {
 input[type='submit'],
 button {
   font: inherit;
-}
+} */
 
 table th,
 table td {

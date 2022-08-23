@@ -15,7 +15,9 @@ const Abroad = (props) => {
   let navSide = '';
   let school = '';
   let program = '';
+  // eslint-disable-next-line
   let schedule = '';
+  // eslint-disable-next-line
   let procedure = '';
 
   if (props.current) {
@@ -27,8 +29,10 @@ const Abroad = (props) => {
   } else if (props.current === 'program') {
     program = 'current';
   } else if (props.current === 'schedule') {
+    // eslint-disable-next-line
     schedule = 'current';
   } else if (props.current === 'procedure') {
+    // eslint-disable-next-line
     procedure = 'current';
   }
 
@@ -40,11 +44,11 @@ const Abroad = (props) => {
         </div>
       </Link>
       <Link to='/abroad/school' onClick={onClick}>
-        <div className={`dropdownList dropdownBetween ${navSide} ${school}`}>
+        <div className={`dropdownList dropdownLast ${navSide} ${school}`}>
           학교소개
         </div>
       </Link>
-      <Link to='/abroad/schedule' onClick={onClick}>
+      {/* <Link to='/abroad/schedule' onClick={onClick}>
         <div className={`dropdownList dropdownBetween ${navSide} ${schedule}`}>
           일일스케줄
         </div>
@@ -53,7 +57,7 @@ const Abroad = (props) => {
         <div className={`dropdownList dropdownLast ${navSide} ${procedure}`}>
           접수방법
         </div>
-      </Link>
+      </Link> */}
     </div>
   );
 };

@@ -19,6 +19,7 @@ const Community = (props) => {
   let policy = '';
   let forum = '';
   let review = '';
+  let gallery = '';
 
   if (props.current) {
     navSide = 'navSide';
@@ -27,6 +28,7 @@ const Community = (props) => {
   if (props.current === 'announcement') {
     announcement = 'current';
   } else if (props.current === 'items') {
+    // eslint-disable-next-line
     items = 'current';
   } else if (props.current === 'entry') {
     entry = 'current';
@@ -36,6 +38,8 @@ const Community = (props) => {
     forum = 'current';
   } else if (props.current === 'review') {
     review = 'current';
+  } else if (props.current === 'gallery') {
+    gallery = 'current';
   }
 
   return (
@@ -47,9 +51,14 @@ const Community = (props) => {
           공지사항
         </div>
       </Link>
-      <Link to='/community/items' onClick={onClick}>
+      {/* <Link to='/community/items' onClick={onClick}>
         <div className={`dropdownList dropdownBetween ${navSide} ${items}`}>
           연수준비물
+        </div>
+      </Link> */}
+      <Link to='/community/gallery' onClick={onClick}>
+        <div className={`dropdownList dropdownBetween ${navSide} ${gallery}`}>
+          갤러리
         </div>
       </Link>
       <Link to='/community/entry' onClick={onClick}>
