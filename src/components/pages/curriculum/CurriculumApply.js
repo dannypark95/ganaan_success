@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import emailjs from 'emailjs-com';
@@ -7,13 +6,12 @@ import emailjs from 'emailjs-com';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import SubmitConfirmation from '../../layout/comp/SubmitConfirmation';
 import Header from '../../layout/Header';
 import Curriculum from '../../layout/dropdown/Curriculum';
 
 const CurriculumApply = () => {
   const [date, setDate] = useState(new Date());
-
-  let navigate = useNavigate();
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -42,9 +40,6 @@ const CurriculumApply = () => {
       );
 
       await Promise.all([customerEmail, backlogEmail]);
-
-      let path = '/submit';
-      navigate(path);
     }
   };
 
@@ -144,6 +139,9 @@ const CurriculumApply = () => {
                       type='name'
                       placeholder='example@domain.com'
                     />
+                    <Form.Text className='text-muted'>
+                      신청후 확인 이메일이 발송됩니다.
+                    </Form.Text>
                   </Form.Group>
                 </Row>
 

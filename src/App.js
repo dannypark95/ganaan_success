@@ -47,7 +47,7 @@ function App() {
     <NavbarState>
       <Router>
         <Navbar />
-        <div className='all-center'>
+        <div className='all-center contents'>
           <Routes>
             {/* Home Page */}
             <Route exact path='/' element={<Home />} />

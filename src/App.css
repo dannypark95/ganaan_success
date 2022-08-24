@@ -387,23 +387,18 @@ img {
   transition: opacity 0.15s linear;
 }
 
-/* input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
-select,
-textarea {
-  display: block;
-  width: 100%;
-  padding: 0.4rem;
-  font-size: 1.2rem;
-  border: 1px solid #ccc;
+.sticky-nav {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: #ffffff;
+  opacity: 0.9;
+  z-index: 99;
 }
 
-input[type='submit'],
-button {
-  font: inherit;
-} */
+.contents {
+  padding-top: 80px;
+}
 
 table th,
 table td {
@@ -1325,6 +1320,11 @@ table th {
 
 /* Mobile Styles */
 @media (max-width: 900px) {
+  .contents,
+  .menuMobile {
+    padding-top: 56px;
+  }
+
   .navLogo {
     margin-top: -4px;
   }
@@ -1464,7 +1464,7 @@ table th {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100vw;
     height: 100vh;
-    z-index: 2;
+    z-index: 100;
     margin-top: -56px;
   }
 

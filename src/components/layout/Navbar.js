@@ -21,7 +21,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='navGrid'>
+      <div></div>
+      <div className='navGrid sticky-nav'>
         <nav className='navbar nav-g1'>
           <div className='logo'>
             <Link to='/'>

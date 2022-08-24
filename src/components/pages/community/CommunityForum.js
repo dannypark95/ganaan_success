@@ -128,6 +128,9 @@ const CommunityForum = () => {
                           value={values.contactEmail}
                           onChange={handleChange}
                         />
+                        <Form.Text className='text-muted'>
+                          신청후 확인 이메일이 발송됩니다.
+                        </Form.Text>
                       </Form.Group>
                       <Form.Group as={Col} controlId='kakaoValidation'>
                         <Form.Label>카카오톡</Form.Label>
