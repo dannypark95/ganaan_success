@@ -10,7 +10,7 @@ const Boxes = () => {
             link='/community/announcement'
             icon='fa-newspaper-o'
             heading='공지사항'
-            desc='썩세스아카데미의 최신 소식을 한눈에 확인 하세요'
+            desc='SUCCESS ACADEMY 의 최신 소식을 한눈에 확인 하세요'
           />
         </div>
         <div className='box-g2 p-4 box m-3'>

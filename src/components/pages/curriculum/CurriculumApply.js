@@ -243,7 +243,7 @@ const CurriculumApply = () => {
 
                     <Row className='mb-3'>
                       <Form.Group controlId='abroad' as={Col}>
-                        <Form.Label>해외 영어연수*</Form.Label>
+                        <Form.Label>해외 영어연수 경험*</Form.Label>
                         <div key={`abroad-checkbox`}>
                           <Form.Check
                             inline
