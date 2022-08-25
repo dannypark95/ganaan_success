@@ -394,6 +394,7 @@ img {
   background-color: #ffffff;
   opacity: 0.9;
   z-index: 99;
+  /* padding-top: 50px; */
 }
 
 .contents {
@@ -1716,7 +1717,7 @@ table th {
   }
 
   .navTitle {
-    padding: 0 2vw;
+    padding: 0 46px;
   }
 
   .nav-g2 {

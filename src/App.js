@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+// import Topper from './components/layout/Topper';
 import Navbar from './components/layout/Navbar';
 import Contact from './components/layout/Contact';
 import Footer from './components/layout/Footer';
@@ -46,6 +47,7 @@ function App() {
   return (
     <NavbarState>
       <Router>
+        {/* <Topper /> */}
         <Navbar />
         <div className='all-center contents'>
           <Routes>

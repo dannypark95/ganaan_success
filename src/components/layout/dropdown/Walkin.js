@@ -24,6 +24,7 @@ const Walkin = (props) => {
   }
 
   if (props.current === 'apply') {
+    // eslint-disable-next-line
     apply = 'current';
   } else if (props.current === 'intro') {
     intro = 'current';
@@ -40,11 +41,11 @@ const Walkin = (props) => {
 
   return (
     <div>
-      <Link to='/walkin/apply' onClick={onClick}>
+      {/* <Link to='/walkin/apply' onClick={onClick}>
         <div className={`dropdownList dropdownFirst ${navSide} ${apply}`}>
           접수신청
         </div>
-      </Link>
+      </Link> */}
       <Link to='/walkin/intro' onClick={onClick}>
         <div className={`dropdownList dropdownLast ${navSide} ${intro}`}>
           학원안내
