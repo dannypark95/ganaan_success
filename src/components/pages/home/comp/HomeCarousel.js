@@ -20,7 +20,7 @@ const HomeCarousel = () => {
           />
           <Carousel.Caption>
             <h2 className='carouselHeading'>2023 겨울방학영어캠프</h2>
-            <h4 className='programTitle mt-3 mb-3 homeTitle'>
+            <h4 className='programTitle mt-2 mb-2 homeTitle'>
               SUCCESS ACADEMY & Ganaan International School ENGLISH CAMP
             </h4>
             <div className='carouselDate'>2023.01.01 ~ 02.25</div>
