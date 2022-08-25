@@ -1,4 +1,5 @@
 import React from 'react';
+import Table from 'react-bootstrap/Table';
 
 import Header from '../../layout/Header';
 import Community from '../../layout/dropdown/Community';
@@ -18,13 +19,18 @@ const CommunityAnnouncement = () => {
             <div className='pageTitle'>
               <span className='subTitleNav'>공지사항</span>
             </div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Perspiciatis similique consequatur nostrum soluta amet quas alias
-            quod saepe animi dolor odit magni quia consequuntur, a aspernatur
-            cum quisquam vel, tenetur tempore necessitatibus quidem accusamus
-            at. Itaque aspernatur quod ratione non consequuntur numquam
-            doloribus? Accusantium assumenda recusandae possimus repellendus,
-            autem dicta!
+            <div className='announceTable'>
+              <Table striped bordered hover>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>제목</th>
+                    <th>작성일</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </Table>
+            </div>
           </div>
         </div>
       </div>

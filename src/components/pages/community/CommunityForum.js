@@ -77,7 +77,7 @@ const CommunityForum = () => {
           </div>
           <div className='page-g2'>
             <div className='pageTitle'>
-              <span className='subTitleNav'>상담요청</span>
+              <span className='subTitleNav'>상담문의</span>
             </div>
             {submitCheck && <SubmitConfirmation />}
 
@@ -133,7 +133,7 @@ const CommunityForum = () => {
                         </Form.Text>
                       </Form.Group>
                       <Form.Group as={Col} controlId='kakaoValidation'>
-                        <Form.Label>카카오톡</Form.Label>
+                        <Form.Label>카카오톡 ID</Form.Label>
                         <Form.Control
                           type='text'
                           name='contactKakao'

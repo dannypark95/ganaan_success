@@ -26,7 +26,6 @@ const Community = (props) => {
   }
 
   if (props.current === 'announcement') {
-    // eslint-disable-next-line
     announcement = 'current';
   } else if (props.current === 'items') {
     // eslint-disable-next-line
@@ -47,13 +46,13 @@ const Community = (props) => {
 
   return (
     <div>
-      {/* <Link to='/community/announcement' onClick={onClick}>
+      <Link to='/community/announcement' onClick={onClick}>
         <div
           className={`dropdownList dropdownFirst ${navSide} ${announcement}`}
         >
           공지사항
         </div>
-      </Link> */}
+      </Link>
       {/* <Link to='/community/items' onClick={onClick}>
         <div className={`dropdownList dropdownBetween ${navSide} ${items}`}>
           연수준비물
@@ -65,7 +64,7 @@ const Community = (props) => {
         </div>
       </Link> */}
       <Link to='/community/entry' onClick={onClick}>
-        <div className={`dropdownList dropdownFirst ${navSide} ${entry}`}>
+        <div className={`dropdownList dropdownBetween ${navSide} ${entry}`}>
           출입국 정보
         </div>
       </Link>
@@ -76,7 +75,7 @@ const Community = (props) => {
       </Link>
       <Link to='/community/forum' onClick={onClick}>
         <div className={`dropdownList dropdownLast ${navSide} ${forum}`}>
-          상담요청
+          상담문의
         </div>
       </Link>
       {/* <Link to='/community/review' onClick={onClick}>
