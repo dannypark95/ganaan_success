@@ -19,7 +19,7 @@ const HomeCarousel = () => {
             alt='First slide'
           />
           <Carousel.Caption>
-            <h2 className='carouselHeading'>2023 겨울방학영어캠프</h2>
+            <h2 className='carouselHeading'>2023 겨울방학 영어캠프</h2>
             <h4 className='programTitle mt-2 mb-2 homeTitle'>
               SUCCESS ACADEMY & Ganaan International School ENGLISH CAMP
             </h4>
