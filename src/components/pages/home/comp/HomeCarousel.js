@@ -57,8 +57,8 @@ const HomeCarousel = () => {
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
+        </Carousel.Item> */}
+        {/* <Carousel.Item>
           <img
             className='d-block carouselPic'
             src={home_02}

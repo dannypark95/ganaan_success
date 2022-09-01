@@ -1,5 +1,6 @@
 import React from 'react';
 import BoxContent from './BoxContent';
+import BoxWebsite from './BoxWebsite';
 
 const Boxes = () => {
   return (
@@ -14,11 +15,10 @@ const Boxes = () => {
           />
         </div>
         <div className='box-g2 p-4 box m-3'>
-          <BoxContent
-            link='/curriculum/intro'
-            icon='fa-info-circle'
-            heading='영어캠프'
-            desc='SUCCESS + GANAAN 영어캠프소개'
+          <BoxWebsite
+            icon='fa-coffee'
+            heading='카페'
+            desc='캠프 기간 중 학생들 사진등 생생한 캠프 내용을 보실 수 있습니다'
           />
         </div>
         <div className='box-g3 p-4 box m-3'>
