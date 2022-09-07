@@ -25,7 +25,7 @@ const CurriculumGuide = () => {
             <div className='currGuideMain text-left'>
               <div className='currGuideGrid'>
                 <div className='currGuide-g1'>
-                  <h3> - 가나안 겨울 영어 캠프 모집 요강</h3>
+                  <h3> 가나안 겨울 영어 캠프 모집 요강</h3>
                   <div className='currGuideTitleSub'>
                     주니어 영어 캠프는 부모님이 동반하지 않는 영어 어학
                     프로그램입니다.

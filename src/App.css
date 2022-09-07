@@ -400,7 +400,6 @@ img {
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   background-color: #ffffff;
-  opacity: 0.9;
   z-index: 99;
   /* padding-top: 50px; */
 }
@@ -1552,11 +1551,11 @@ table th {
 
   .menuMobile {
     position: fixed;
-    -webkit-transition: max-height 0.4s ease-in-out 0.4s;
+    /* -webkit-transition: max-height 0.4s ease-in-out 0.4s;
     -moz-transition: max-height 0.4s ease-in-out 0.4s;
     -o-transition: max-height 0.4s ease-in-out 0.4s;
     -ms-transition: max-height 0.4s ease-in-out 0.4s;
-    transition: max-height 0.4s ease-in-out 0.4s;
+    transition: max-height 0.4s ease-in-out 0.4s; */
     background-color: rgba(0, 0, 0, 0.7);
     width: 100vw;
     height: 100vh;

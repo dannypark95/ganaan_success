@@ -3,9 +3,6 @@ import React from 'react';
 import Header from '../../layout/Header';
 import Curriculum from '../../layout/dropdown/Curriculum';
 
-import ssp_permit from '../../../media/ssp_permit.jpeg';
-import tesda_permit from '../../../media/tesda_permit.jpeg';
-
 import GanaanSlider from './comp/GanaanSlider';
 
 const CurriculumLocation = () => {
@@ -59,29 +56,6 @@ const CurriculumLocation = () => {
                 2019년에 Senior High School (한국의 전문대)로도 승인되어 수업을
                 하고 있으며, 필리핀 세부에 최초로 한국의 지원으로 설립한
                 학교입니다.
-              </div>
-
-              <div className='currPermitPicture permitPicture'>
-                <div className='permit'>
-                  <img
-                    src={ssp_permit}
-                    alt='ssp_permit'
-                    className='permit rounded imgShadow'
-                  />
-                  <div className='permitDesc_1 permitDesc'>
-                    필리핀 이민국 인증 (SSP)
-                  </div>
-                </div>
-                <div className='permit'>
-                  <img
-                    src={tesda_permit}
-                    alt='tesda_permit'
-                    className='permit rounded imgShadow'
-                  />
-                  <div className='permitDesc_2 permitDesc'>
-                    필리핀 교육청 인증 (DEPED)
-                  </div>
-                </div>
               </div>
             </div>
           </div>
