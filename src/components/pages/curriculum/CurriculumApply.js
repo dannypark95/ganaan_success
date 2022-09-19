@@ -102,7 +102,7 @@ const CurriculumApply = () => {
 
             {!submitCheck && (
               <div>
-                <h4 className='text-left'>온라인 참가신청서</h4>
+                <h4 className='text-left'>영어캠프 참가신청서</h4>
                 <hr />
 
                 <div className='currApplyForm text-left'>
@@ -144,6 +144,9 @@ const CurriculumApply = () => {
                           <Form.Control type='class' />
                           <option value='학년을 선택해주세요' disabled>
                             학년을 선택해주세요
+                          </option>
+                          <option value='유치원'>
+                            유치원생 (만 3세 ~ 5세)
                           </option>
                           <option value='초등학교 1학년'>초등학교 1학년</option>
                           <option value='초등학교 2학년'>초등학교 2학년</option>

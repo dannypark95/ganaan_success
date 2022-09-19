@@ -8,6 +8,7 @@ import Abroad from './dropdown/Abroad';
 import Walkin from './dropdown/Walkin';
 import Curriculum from './dropdown/Curriculum';
 import Community from './dropdown/Community';
+import Family from './dropdown/Family';
 
 import Hamburger from './Hamburger';
 import MenuMobile from './MenuMobile';
@@ -56,6 +57,14 @@ const Navbar = () => {
               </div>
               <div className='navItemsMenu'>
                 <Curriculum />
+              </div>
+            </li>
+            <li className='navItems'>
+              <div className='navTitle'>
+                <div className='navName'>가족캠프</div>
+              </div>
+              <div className='navItemsMenu'>
+                <Family />
               </div>
             </li>
             <li className='navItems'>

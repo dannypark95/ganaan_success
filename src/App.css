@@ -405,7 +405,7 @@ img {
 }
 
 .contents {
-  padding-top: 80px;
+  padding-top: 56px;
 }
 
 table th,
@@ -1364,6 +1364,12 @@ table th {
   font-size: 16px;
 }
 
+.homeCampImg {
+  width: 600px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 /* Mobile Version */
 @media (max-width: 1710px) {
   .navTitle {
@@ -1372,6 +1378,10 @@ table th {
 }
 
 @media (max-width: 1200px) {
+  .currTable td {
+    font-size: 11px;
+  }
+
   .logo {
     margin-left: 4vw;
   }
@@ -1812,6 +1822,19 @@ table th {
 }
 
 /* Big screen  */
+@media only screen and (min-width: 1333px) {
+  .navTitle {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1405px) {
+  .navTitle {
+    font-size: 13px;
+    padding: 0px 2vw;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .sideHistory,
   .sideCurr {

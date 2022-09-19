@@ -1,9 +1,9 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-import pic_1 from '../../../../media/schools/mmis_1.png';
-import pic_2 from '../../../../media/schools/mmis_2.png';
-import pic_3 from '../../../../media/schools/mmis_3.png';
+import pic_1 from '../../../../media/schools/woodridge_1.png';
+import pic_2 from '../../../../media/schools/woodridge_2.png';
+import pic_3 from '../../../../media/schools/woodridge_3.png';
 
 const WoodridgeSlider = () => {
   return (
