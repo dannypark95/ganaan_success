@@ -110,6 +110,21 @@ const CurriculumProgram = () => {
                 </div>
               </div>
             </div>
+
+            <hr />
+            <div className='fs-4'>
+              <div className='classTitle'>수학 수업</div>
+              <div className='ps-3'>
+                <div className='fs-6'>
+                  <div className='classSubtitle'>학년별 그룹수업</div>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+            <div className='fs-4'>
+              <div className='classTitle'>중국어 수업 (선택)</div>
+            </div>
           </div>
         </div>
       </div>

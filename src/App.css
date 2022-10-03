@@ -102,6 +102,14 @@ img {
   width: 100%;
 }
 
+.fontIBM {
+  font-family: 'IBMPlexSansKR-Regular';
+}
+
+.fontMICE {
+  font-family: 'MICEGothic Bold';
+}
+
 /* Utilities */
 .container {
   max-width: 1100px;
@@ -1366,7 +1374,7 @@ table th {
 
 .homeCampImg {
   width: 600px;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
   padding-bottom: 2rem;
 }
 

@@ -46,9 +46,10 @@ const CurriculumGuide = () => {
                 </div>
                 <div className='currGuidePriceSale'>
                   <div>
-                    조기 등록시 5% 할인 (2022년 10월 15일까지 예약금 100만원
+                    조기 등록시 10만원 할인 (2022년 10월 31일까지 예약금 100만원
                     입금시)
                   </div>
+                  <div>형제할인 10만원</div>
                   <div>무료 화상 영어 혜택 (4주간 25분씩 수업, 총 20회)</div>
                 </div>
                 <div className='currPriceTable text-center'>
@@ -63,18 +64,24 @@ const CurriculumGuide = () => {
                     <tbody>
                       <tr>
                         <td>4주</td>
-                        <td>3,705,000 원</td>
-                        <td>3,900,000 원</td>
+                        <td>
+                          <s>360 만원</s> <strong>350 만원</strong>
+                        </td>
+                        <td>360 만원</td>
                       </tr>
                       <tr>
                         <td>6주</td>
-                        <td>4,655,000 원</td>
-                        <td>4,900,000 원</td>
+                        <td>
+                          <s>490 만원</s> <strong>480 만원</strong>
+                        </td>
+                        <td>490 만원</td>
                       </tr>
                       <tr>
                         <td>8주</td>
-                        <td>5,605,000 원</td>
-                        <td>5,900,000 원</td>
+                        <td>
+                          <s>590 만원</s> <strong>580 만원</strong>
+                        </td>
+                        <td>580 만원</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -96,22 +103,22 @@ const CurriculumGuide = () => {
                       <tr>
                         <td>4주 1차</td>
                         <td>인천 출발 / 부산 출발</td>
-                        <td>2023년 1월 1일 ~ 1월 28일</td>
+                        <td>12월 31일 ~ 1월 28일</td>
                       </tr>
                       <tr>
                         <td>4주 2차</td>
                         <td>인천 출발</td>
-                        <td>2023년 1월 15일 ~ 2월 11일</td>
+                        <td>1월 15일 ~ 2월 11일</td>
                       </tr>
                       <tr>
                         <td>6주</td>
                         <td>인천 출발 / 부산 출발</td>
-                        <td>2023년 1월 1일 ~ 2월 11일</td>
+                        <td>12월 31일 ~ 2월 11일</td>
                       </tr>
                       <tr>
                         <td>8주</td>
                         <td>인천 출발 / 부산 출발</td>
-                        <td>2023년 1월 1일 ~ 2월 25일</td>
+                        <td>12월 31일 ~ 2월 25일</td>
                       </tr>
                     </tbody>
                   </Table>
