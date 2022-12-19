@@ -4,8 +4,8 @@ import campPrice from '../../../../media/home/price.png';
 
 const Schedule = () => {
   return (
-    <div className='row mt-2'>
-      <div className='col'>
+    <div className='row mt-2 container'>
+      <div className='col text-center'>
         <div className='fw-bolder fs-5 fontMICE'>영어캠프 스케줄</div>
         <img
           src={campSchedule}

@@ -59,14 +59,14 @@ const Navbar = () => {
                 <Curriculum />
               </div>
             </li>
-            <li className='navItems'>
+            {/* <li className='navItems'>
               <div className='navTitle'>
                 <div className='navName'>가족캠프</div>
               </div>
               <div className='navItemsMenu'>
                 <Family />
               </div>
-            </li>
+            </li> */}
             <li className='navItems'>
               {' '}
               <div className='navTitle'>
