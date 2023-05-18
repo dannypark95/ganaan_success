@@ -1,6 +1,8 @@
 import React from 'react';
-import campSchedule from '../../../../media/home/schedule.png';
-import campPrice from '../../../../media/home/price.png';
+// import campSchedule from '../../../../media/home/schedule.png';
+// import campPrice from '../../../../media/home/price.png';
+import junior from '../../../../media/home/2023junior.png';
+import family from '../../../../media/home/2023family.png';
 
 const Schedule = () => {
   return (
@@ -8,20 +10,20 @@ const Schedule = () => {
       <div className='d-flex justify-content-center'>
         <div className='row mt-2 container mx-auto'>
           <div className='col text-center'>
-            <div className='fw-bolder fs-5 fontMICE'>영어캠프 스케줄</div>
+            <div className='fw-bolder fs-5 fontMICE mt-3 mb-3'>
+              가족 영어캠프
+            </div>
             <img
-              src={campSchedule}
+              src={family}
               className='homeCampImg'
               alt='Camp Home Schedule'
             />
           </div>
           <div className='col'>
-            <div className='fw-bolder fs-5 fontMICE'>주니어 영어캠프 비용</div>
-            <img
-              src={campPrice}
-              className='homeCampImg'
-              alt='Camp Home Price'
-            />
+            <div className='fw-bolder fs-5 fontMICE mt-3 mb-3'>
+              주니어 영어캠프
+            </div>
+            <img src={junior} className='homeCampImg' alt='Camp Home Price' />
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import Curriculum from '../../layout/dropdown/Curriculum';
 import Week4Menu from './comp/Week4Menu';
 
 import menuWeek1 from '../../../media/menuWeek1.png';
-import menuWeek2 from '../../../media/menuWeek2.png';
+// import menuWeek2 from '../../../media/menuWeek2.png';
 
 const CurriculumMenu = () => {
   return (
@@ -22,6 +22,7 @@ const CurriculumMenu = () => {
           <div className='page-g2 currMenu-g2'>
             <div className='pageTitle'>
               <span className='subTitleNav'>식단표</span>
+              <h6>*주말에는 식사가 제공되시 않습니다</h6>
             </div>
             <div className='currMenu'>
               <Week4Menu />
@@ -32,7 +33,7 @@ const CurriculumMenu = () => {
                 alt='menu week 1'
                 className='mb-3 imgShadow'
               />
-              <img src={menuWeek2} alt='menu week 2' className='imgShadow' />
+              {/* <img src={menuWeek2} alt='menu week 2' className='imgShadow' /> */}
             </div>
           </div>
         </div>

@@ -98,20 +98,21 @@ const CurriculumProgram = () => {
                   </div>
                   <div className='fs-6'>
                     <div className='classSubtitle'>
-                      가나안 국제학교 청강수업 (선택)
+                      필리핀 선생님과 함께하는 엑티비티 (15:25 - 17:00)
                     </div>
+                    <strong>
+                      수영, 농구, 스피치 프레젠테이션 준비, 전통 게임, 영화감상
+                    </strong>
                     <div>
-                      어느 정도 듣고 말하기가 되는 학생들은 선택에 의해서 가나안
-                      국제학교 수업에 참관할 수 있습니다. 가나안 국제학교는
-                      필리핀 정식 사립학교로 참관 수업을 통해 필리핀 학교 수업을
-                      경험할 수 있습니다.
+                      선생님과 학생을 5개 그룹으로 나눠 매일 다른 활동수업을
+                      진행합니다.
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <hr />
+            {/* <hr />
             <div className='fs-4'>
               <div className='classTitle'>수학 수업</div>
               <div className='ps-3'>
@@ -124,7 +125,7 @@ const CurriculumProgram = () => {
             <hr />
             <div className='fs-4'>
               <div className='classTitle'>중국어 수업 (선택)</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

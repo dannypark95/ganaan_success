@@ -281,7 +281,7 @@ const CurriculumApply = () => {
 
                     <hr></hr>
 
-                    <Row className='mb-3'>
+                    {/* <Row className='mb-3'>
                       <Form.Group as={Col} controlId='formDuration'>
                         <Form.Label>연수기간*</Form.Label>
                         <div key={`duration-checkbox`}>
@@ -345,9 +345,9 @@ const CurriculumApply = () => {
                           />
                         </div>
                       </Form.Group>
-                    </Row>
+                    </Row> */}
 
-                    <hr />
+                    {/* <hr /> */}
 
                     <Form.Group className='mb-3'>
                       <Form.Label>학생성격 및 영어능력*</Form.Label>

@@ -309,6 +309,21 @@ img {
   border-radius: 5px;
 }
 
+.blocks-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
 .alert {
   padding: 0.7rem;
   margin: 1rem 0;
@@ -1196,7 +1211,7 @@ table th {
 .currGuidePriceSale {
   font-size: 16px;
   font-weight: 400;
-  color: #3a32c3;
+  color: #b20000;
 }
 
 .currGuideSidePicture {
@@ -1342,6 +1357,7 @@ table th {
 
 .carouselDate {
   font-family: 'EarlyFontDiary';
+  font-size: 25px;
 }
 
 .carouselDesc {
@@ -1373,9 +1389,8 @@ table th {
 }
 
 .homeCampImg {
-  width: 600px;
-  padding-top: 0.5rem;
-  padding-bottom: 2rem;
+  width: 400px;
+  border-radius: 15px;
 }
 
 /* Mobile Version */

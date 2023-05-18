@@ -2,11 +2,12 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 
-import home_01 from '../../../../media/homeBanner/home_01.png';
-import home_02 from '../../../../media/homeBanner/home_02.png';
+// import home_01 from '../../../../media/homeBanner/home_01.png';
+// import home_02 from '../../../../media/homeBanner/home_02.png';
 import home_03 from '../../../../media/homeBanner/home_03.png';
 
-import brochure from '../../../../media/success_academy_2023_english_camp.pdf';
+import brochure from '../../../../media/summer2023.pdf';
+import junior_brochure from '../../../../media/summer2023junior.pdf';
 
 const HomeCarousel = () => {
   return (
@@ -19,18 +20,27 @@ const HomeCarousel = () => {
             alt='First slide'
           />
           <Carousel.Caption>
-            <h2 className='carouselHeading'>2023 겨울방학 영어캠프</h2>
+            <h1 className='carouselHeading'>2023 SUMMER CAMP</h1>
             <h4 className='programTitle mt-2 mb-2 homeTitle'>
               SUCCESS ACADEMY & Ganaan International School ENGLISH CAMP
             </h4>
-            <div className='carouselDate'>2023.01.01 ~ 02.25</div>
+            <div className='carouselDate'>가족캠프 | 주니어캠프</div>
             <div className='carouselDesc mt-2 mb-2'>
               글로벌 인재로 키우는 <span>국제영어캠프</span>!
             </div>
             <div className='carouselBtn'>
               <a href={brochure} target='_blank' rel='noopener noreferrer'>
                 <button type='button' class='btn btn-dark'>
-                  브로셔
+                  가족캠프 브로셔
+                </button>
+              </a>
+              <a
+                href={junior_brochure}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button type='button' class='btn btn-dark'>
+                  주니어캠프 브로셔
                 </button>
               </a>
               <Link to='/community/forum'>
