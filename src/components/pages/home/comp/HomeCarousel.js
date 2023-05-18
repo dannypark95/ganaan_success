@@ -43,11 +43,6 @@ const HomeCarousel = () => {
                   주니어캠프 브로셔
                 </button>
               </a>
-              <Link to='/community/forum'>
-                <button type='button' class='btn btn-dark'>
-                  상담문의
-                </button>
-              </Link>{' '}
               <Link to='/curriculum/apply'>
                 <button type='button' class='btn btn-dark'>
                   접수신청
