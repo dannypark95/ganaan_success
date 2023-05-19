@@ -274,6 +274,30 @@ const CurriculumGuide = () => {
                     선착순 모집
                   </div>
                 </div>
+
+                {/* <div className='currGuideSummary'>
+                  <div>
+                    <strong>모집 대상</strong> : 초등학교 3학년, 중학교 3학년
+                  </div>
+                  <div>
+                    <strong>캠프 기간</strong> : 2023년 7월 17일 - 8월 11일
+                    (1차)
+                    <br></br>
+                    2023년 7월 24일 - 8월 18일 (2차)
+                  </div>
+                  <div>
+                    <strong>기숙 형태</strong> : 필리핀 선생님 상주, 학생 4-6명
+                    배정
+                  </div>
+                  <div>
+                    <strong>모집 마감</strong> :선착순 (예약금 100만원
+                    입슴순으로 선착순 모집)
+                  </div>
+                  <div>
+                    <strong>캠프 장소</strong> : 필리핀 세부 막탄 가나안
+                    크리스찬 국제학교
+                  </div>
+                </div> */}
               </div>
             </div>
           </div>
