@@ -6,9 +6,6 @@ import { Link } from 'react-router-dom';
 // import home_02 from '../../../../media/homeBanner/home_02.png';
 import home_03 from '../../../../media/homeBanner/home_03.png';
 
-import brochure from '../../../../media/summer2023.pdf';
-import junior_brochure from '../../../../media/summer2023junior.pdf';
-
 const HomeCarousel = () => {
   return (
     <div>
@@ -29,20 +26,11 @@ const HomeCarousel = () => {
               글로벌 인재로 키우는 <span>국제영어캠프</span>!
             </div>
             <div className='carouselBtn'>
-              <a href={brochure} target='_blank' rel='noopener noreferrer'>
+              <Link to='/curriculum/contact'>
                 <button type='button' class='btn btn-dark'>
-                  가족캠프 브로셔
+                  상담문의
                 </button>
-              </a>
-              <a
-                href={junior_brochure}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <button type='button' class='btn btn-dark'>
-                  주니어캠프 브로셔
-                </button>
-              </a>
+              </Link>{' '}
               <Link to='/curriculum/apply'>
                 <button type='button' class='btn btn-dark'>
                   접수신청

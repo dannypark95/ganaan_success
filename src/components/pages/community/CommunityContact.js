@@ -11,7 +11,7 @@ import emailjs from 'emailjs-com';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const CommunityForum = () => {
+const CommunityContact = () => {
   const [submitCheck, setSubmitCheck] = useState(false);
   const [formCheck, setFormCheck] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
@@ -218,4 +218,4 @@ const CommunityForum = () => {
   );
 };
 
-export default CommunityForum;
+export default CommunityContact;

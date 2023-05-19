@@ -20,7 +20,7 @@ import AbroadSchool from './components/pages/abroad/AbroadSchool';
 import CommunityAnnouncement from './components/pages/community/CommunityAnnouncement';
 import CommunityReview from './components/pages/community/CommunityReview';
 import CommunityEntry from './components/pages/community/CommunityEntry';
-import CommunityForum from './components/pages/community/CommunityForum';
+import CommunityContact from './components/pages/community/CommunityContact';
 import CommunityPolicy from './components/pages/community/CommunityPolicy';
 import CommunityGallery from './components/pages/community/CommunityGallery';
 // import CommunityItems from './components/pages/community/CommunityItems';
@@ -121,7 +121,11 @@ function App() {
               element={<CommunityAnnouncement />}
             />
             <Route exact path='/community/entry' element={<CommunityEntry />} />
-            <Route exact path='/community/forum' element={<CommunityForum />} />
+            <Route
+              exact
+              path='/community/contact'
+              element={<CommunityContact />}
+            />
             {/* <Route exact path='/community/items' element={<CommunityItems />} /> */}
             <Route
               exact
