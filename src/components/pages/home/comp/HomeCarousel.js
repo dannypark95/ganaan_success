@@ -46,11 +46,15 @@ const HomeCarousel = () => {
                   주니어캠프
                 </button>
               </a>{' '}
-              <Link to='/curriculum/contact'>
+              <a
+                href={'http://qr.kakao.com/talk/IddTVQsRO3x4LS2ZByLQ0qmJCoY-'}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <button type='button' class='btn btn-dark'>
                   상담문의
                 </button>
-              </Link>{' '}
+              </a>{' '}
               <Link to='/curriculum/apply'>
                 <button type='button' class='btn btn-dark'>
                   접수신청
