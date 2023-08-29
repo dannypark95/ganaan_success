@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 // import home_01 from '../../../../media/homeBanner/home_01.png';
 // import home_02 from '../../../../media/homeBanner/home_02.png';
 import home_03 from '../../../../media/homeBanner/home_03.png';
+import family_brochure from '../../../../media/family.pdf';
+import junior_brochure from '../../../../media/junior.pdf';
 
 const HomeCarousel = () => {
   return (
@@ -17,7 +19,7 @@ const HomeCarousel = () => {
             alt='First slide'
           />
           <Carousel.Caption>
-            <h1 className='carouselHeading'>2023 SUMMER CAMP</h1>
+            <h1 className='carouselHeading'>2024 WINTER CAMP</h1>
             <h4 className='programTitle mt-2 mb-2 homeTitle'>
               SUCCESS ACADEMY & Ganaan International School ENGLISH CAMP
             </h4>
@@ -26,6 +28,24 @@ const HomeCarousel = () => {
               글로벌 인재로 키우는 <span>국제영어캠프</span>!
             </div>
             <div className='carouselBtn'>
+              <a
+                href={family_brochure}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button type='button' class='btn btn-dark'>
+                  가족캠프
+                </button>
+              </a>{' '}
+              <a
+                href={junior_brochure}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button type='button' class='btn btn-dark'>
+                  주니어캠프
+                </button>
+              </a>{' '}
               <Link to='/curriculum/contact'>
                 <button type='button' class='btn btn-dark'>
                   상담문의
